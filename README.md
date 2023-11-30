@@ -1,4 +1,4 @@
-# adventofcode2022
+# adventofcode2023
 
 My coding is rusty and sloppy. I'm very much out of practice. I'm doing this quickly as I have time, and focusing more on completion than style or any sort of neatness
 

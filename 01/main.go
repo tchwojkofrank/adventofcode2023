@@ -46,9 +46,32 @@ func main() {
 	run(text)
 	end := time.Now()
 	fmt.Printf("Running time: %v\n", end.Sub(start))
+	start = time.Now()
+	run2(text)
+	end = time.Now()
+	fmt.Printf("Running time: %v\n", end.Sub(start))
 }
 
 func getFirstDigitFromLine(line string) int {
+	for _, c := range line {
+		if c >= '0' && c <= '9' {
+			return int(c - '0')
+		}
+	}
+	return -1
+}
+
+func getLastDigitFromLine(line string) int {
+	for i := len(line) - 1; i >= 0; i-- {
+		c := line[i]
+		if c >= '0' && c <= '9' {
+			return int(c - '0')
+		}
+	}
+	return -1
+}
+
+func getFirstDigitFromLine2(line string) int {
 	for i, c := range line {
 		if c >= '0' && c <= '9' {
 			return int(c - '0')
@@ -62,7 +85,7 @@ func getFirstDigitFromLine(line string) int {
 	return -1
 }
 
-func getLastDigitFromLine(line string) int {
+func getLastDigitFromLine2(line string) int {
 	for i := len(line) - 1; i >= 0; i-- {
 		c := line[i]
 		if c >= '0' && c <= '9' {
@@ -84,6 +107,13 @@ func getLineValue(line string) int {
 	return first*10 + last
 }
 
+func getLineValue2(line string) int {
+	first := getFirstDigitFromLine2(line)
+	last := getLastDigitFromLine2(line)
+	// fmt.Printf("First: %d, Last: %d\n", first, last)
+	return first*10 + last
+}
+
 func getSumFromLines(lines []string) int {
 	sum := 0
 	for _, line := range lines {
@@ -92,8 +122,24 @@ func getSumFromLines(lines []string) int {
 	return sum
 }
 
-func run(input string) {
+func getSumFromLines2(lines []string) int {
+	sum := 0
+	for _, line := range lines {
+		sum += getLineValue2(line)
+	}
+	return sum
+}
+
+func run(input string) string {
 	lines := strings.Split(input, "\n")
 	linesValue := getSumFromLines(lines)
-	fmt.Printf("Sum of all lines: %d\n", linesValue)
+	fmt.Printf("Part 1 Sum of all lines: %d\n", linesValue)
+	return fmt.Sprintf("%d", linesValue)
+}
+
+func run2(input string) string {
+	lines := strings.Split(input, "\n")
+	linesValue := getSumFromLines2(lines)
+	fmt.Printf("Part 2 Sum of all lines: %d\n", linesValue)
+	return fmt.Sprintf("%d", linesValue)
 }

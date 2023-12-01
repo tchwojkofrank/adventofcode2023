@@ -25,7 +25,7 @@ type Graph struct {
 func getPath(prev map[string]Node, current Node) []Node {
 	path := make([]Node, 1)
 	path[0] = current
-	for p, ok := prev[(current).name()]; ok; {
+	for p, ok := prev[(current).name()]; ok; p, ok = prev[(current).name()] {
 		current = p
 		path = append([]Node{current}, path...)
 	}
@@ -75,10 +75,11 @@ func astar(start Node, end Node) []Node {
 			guess := cheapestScore[current.name()] + current.cost((n).name())
 
 			// If we found a better guess
-			if guess < cheapestScore[n.name()] {
+			cScore, ok := cheapestScore[n.name()]
+			if !ok || guess < cScore {
 				prev[n.name()] = current
 				cheapestScore[n.name()] = guess
-				guessScore[n.name()] = guess + (start).heuristic(n.name())
+				guessScore[n.name()] = guess + (start).heuristic(end.name())
 
 				found := false
 				for i := 0; i < len(seenNodes) && !found; i++ {
@@ -94,11 +95,11 @@ func astar(start Node, end Node) []Node {
 					sort.Slice(seenNodes, func(i, j int) bool {
 						iScore, iOK := guessScore[(seenNodes[i]).name()]
 						if !iOK {
-							iScore = math.MaxInt
+							iScore = math.MaxInt / 2
 						}
 						jScore, jOK := guessScore[(seenNodes[j]).name()]
 						if !jOK {
-							jScore = math.MaxInt
+							jScore = math.MaxInt / 2
 						}
 						return iScore < jScore
 					})

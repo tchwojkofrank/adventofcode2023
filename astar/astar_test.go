@@ -2,7 +2,6 @@ package astar
 
 import (
 	"fmt"
-	"math"
 	"strconv"
 	"strings"
 	"testing"
@@ -112,18 +111,31 @@ func getXYfromName(name string) (int, int) {
 
 func (n *TestNode) cost(target string) int {
 	x, y := getXYfromName(target)
+	startX, startY := getXYfromName(n.name())
 	// make a wall from 7,0 to 7,4
 	// and from 7,6 to 7,8
 	// and from 0,8 to 6,8
 	if (x == 7 && y >= 0 && y <= 4) || (x == 7 && y >= 6 && y <= 8) || (y == 8 && x >= 0 && x <= 6) {
-		return math.MaxInt32
+		return 10000
 	}
-	return x + y
+	return abs(x-startX) + abs(y-startY)
+}
+
+func abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
 }
 
 func (n *TestNode) heuristic(target string) int {
 	x, y := getXYfromName(target)
-	return x + y
+	startX, startY := getXYfromName(n.name())
+	return abs(x-startX) + abs(y-startY)
+}
+
+func (n *TestNode) String() string {
+	return fmt.Sprintf("%d,%d", n.x, n.y)
 }
 
 // TestAstar tests the A* algorithm
@@ -163,7 +175,7 @@ func TestAstar(t *testing.T) {
 	fmt.Printf("Path: %v\n", path)
 
 	// Check that the path is correct
-	if len(path) != maxX+maxY {
+	if len(path) != maxX+maxY+1 {
 		t.Errorf("Path length is incorrect: %d", len(path))
 	}
 

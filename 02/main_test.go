@@ -20,7 +20,7 @@ func TestPuzzle1(t *testing.T) {
 
 func TestPuzzle2(t *testing.T) {
 	start := time.Now()
-	text := readInput("test2")
+	text := readInput("test")
 	answer := run2(text)
 	end := time.Now()
 	fmt.Printf("Running time: %v\n", end.Sub(start))

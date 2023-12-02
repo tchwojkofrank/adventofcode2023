@@ -72,6 +72,7 @@ func getGameID(idString string) int {
 }
 
 // pullString is of the form "%d <color>," repeated up to three times once for each color
+// I should have used a map instead of a struct
 func getPull(pullString string) Pull {
 	pull := Pull{red: 0, green: 0, blue: 0}
 	pullString = strings.TrimSpace(pullString)

@@ -51,17 +51,6 @@ type Value struct {
 var objects = make(map[Point]string)
 var values = make([]Value, 0)
 
-func getThings(line string) []string {
-	values := strings.Split(line, ".")
-	things := make([]string, 0)
-	for _, value := range values {
-		if len(value) > 0 {
-			things = append(things, value)
-		}
-	}
-	return things
-}
-
 func updateMaps(line string, p Point) {
 	value := 0
 	start := p
@@ -120,26 +109,9 @@ func run(input string) string {
 	return fmt.Sprintf("%d", sum)
 }
 
-func getObjects(lines []string) map[Point]string {
-	objects := make(map[Point]string)
-	for y, line := range lines {
-		for x, r := range line {
-			if r != '.' && (r < '0' || r > '9') {
-				objects[Point{x, y}] = string(r)
-			}
-		}
-	}
-	return objects
-}
-
-func isAdjecent(p1 Point, p2 Point, objects map[Point]string) bool {
-	for y := p1.y - 1; y <= p2.y+1; y++ {
-		for x := p1.x - 1; x <= p2.x+1; x++ {
-			_, ok := objects[Point{x, y}]
-			if ok {
-				return true
-			}
-		}
+func isAdjacent(p Point, start Point, end Point) bool {
+	if p.x >= start.x-1 && p.x <= end.x+1 && p.y >= start.y-1 && p.y <= end.y+1 {
+		return true
 	}
 	return false
 }
@@ -148,7 +120,7 @@ func getAdjacentValues(p Point) []Value {
 	adjacents := make([]Value, 0)
 	// get all values adjecent to p
 	for _, v := range values {
-		if p.x >= v.start.x-1 && p.x <= v.end.x+1 && p.y >= v.start.y-1 && p.y <= v.end.y+1 {
+		if isAdjacent(p, v.start, v.end) {
 			adjacents = append(adjacents, v)
 		}
 	}

@@ -32,7 +32,7 @@ func main() {
 	end := time.Now()
 	fmt.Printf("Running time: %v\n", end.Sub(start))
 	start = time.Now()
-	run(text)
+	run2(text)
 	end = time.Now()
 	fmt.Printf("Running time: %v\n", end.Sub(start))
 }

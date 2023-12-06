@@ -39,28 +39,48 @@ func main() {
 	fmt.Printf("Running time: %v\n", end.Sub(start))
 }
 
+func getFieldValues(line string) []float64 {
+	fieldStrings := strings.Fields(line)
+	fields := make([]float64, len(fieldStrings))
+	for i, fieldString := range fieldStrings {
+		f, _ := strconv.Atoi(fieldString)
+		fields[i] = float64(f)
+	}
+	return fields
+}
+
 func getTimes(line string) []float64 {
 	line = strings.TrimPrefix(line, "Time:")
 	line = strings.TrimSpace(line)
-	timeStrings := strings.Fields(line)
-	times := make([]float64, len(timeStrings))
-	for i, timeString := range timeStrings {
-		t, _ := strconv.Atoi(timeString)
-		times[i] = float64(t)
-	}
-	return times
+	return getFieldValues(line)
 }
 
 func getDistances(line string) []float64 {
 	line = strings.TrimPrefix(line, "Distance:")
 	line = strings.TrimSpace(line)
-	distanceStrings := strings.Fields(line)
-	distances := make([]float64, len(distanceStrings))
-	for i, distanceString := range distanceStrings {
-		d, _ := strconv.Atoi(distanceString)
-		distances[i] = float64(d)
+	return getFieldValues(line)
+}
+
+func getValue(line string) float64 {
+	fieldStrings := strings.Fields(line)
+	fieldString := ""
+	for _, s := range fieldStrings {
+		fieldString = fieldString + s
 	}
-	return distances
+	field, _ := strconv.Atoi(fieldString)
+	return float64(field)
+}
+
+func getTime(line string) float64 {
+	line = strings.TrimPrefix(line, "Time:")
+	line = strings.TrimSpace(line)
+	return getValue(line)
+}
+
+func getDistance(line string) float64 {
+	line = strings.TrimPrefix(line, "Distance:")
+	line = strings.TrimSpace(line)
+	return getValue(line)
 }
 
 func run(input string) string {
@@ -71,6 +91,7 @@ func run(input string) string {
 	total := 1
 	for i, t := range times {
 		d := distances[i]
+		// I hate floating point
 		x1 = t/2 + math.Sqrt(t*t-4*d)/-2 + 0.01
 		x2 = t/2 - math.Sqrt(t*t-4*d)/-2 - 0.01
 
@@ -86,5 +107,21 @@ func run(input string) string {
 }
 
 func run2(input string) string {
-	return ""
+	lines := strings.Split(input, "\n")
+	time := getTime(lines[0])
+	var x1, x2 float64
+	distance := getDistance(lines[1])
+	d := distance
+	t := time
+	// I hate floating point
+	x1 = t/2 + math.Sqrt(t*t-4*d)/-2 + 0.01
+	x2 = t/2 - math.Sqrt(t*t-4*d)/-2 - 0.01
+
+	minTime := int(math.Ceil(x1) + 0.1)
+	maxTime := int(math.Floor(x2) + 0.1)
+
+	winCount := maxTime - minTime + 1
+
+	fmt.Printf("Total: %d\n", winCount)
+	return fmt.Sprintf("%d", winCount)
 }

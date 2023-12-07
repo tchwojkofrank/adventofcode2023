@@ -177,7 +177,7 @@ func (h Hand) isFullHouse2(j int) bool {
 	case 0:
 		return h.isFullHouse()
 	case 1:
-		return h.is3ofKind()
+		return h.is3ofKind() || h.is2Pairs()
 	case 2:
 		return h.is2Pairs()
 	case 3:

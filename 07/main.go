@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"slices"
 	"sort"
 	"strconv"
 	"strings"
@@ -146,12 +145,9 @@ func (h Hand) is5ofKind2(j int) bool {
 		return h.isFullHouse()
 	case 3:
 		return h.isFullHouse()
-	case 4:
-		return true
-	case 5:
+	default:
 		return true
 	}
-	return false
 }
 
 func (h Hand) is4ofKind2(j int) bool {
@@ -162,14 +158,9 @@ func (h Hand) is4ofKind2(j int) bool {
 		return h.is3ofKind()
 	case 2:
 		return h.is2Pairs()
-	case 3:
-		return true
-	case 4:
-		return true
-	case 5:
+	default:
 		return true
 	}
-	return false
 }
 
 func (h Hand) isFullHouse2(j int) bool {
@@ -182,12 +173,9 @@ func (h Hand) isFullHouse2(j int) bool {
 		return h.is2Pairs()
 	case 3:
 		return h.isFullHouse()
-	case 4:
-		return true
-	case 5:
+	default:
 		return true
 	}
-	return false
 }
 
 func (h Hand) is3ofKind2(j int) bool {
@@ -196,16 +184,9 @@ func (h Hand) is3ofKind2(j int) bool {
 		return h.is3ofKind()
 	case 1:
 		return h.isPair()
-	case 2:
-		return true
-	case 3:
-		return true
-	case 4:
-		return true
-	case 5:
+	default:
 		return true
 	}
-	return false
 }
 
 func (h Hand) is2Pairs2(j int) bool {
@@ -214,34 +195,18 @@ func (h Hand) is2Pairs2(j int) bool {
 		return h.is2Pairs()
 	case 1:
 		return h.isPair()
-	case 2:
-		return true
-	case 3:
-		return true
-	case 4:
-		return true
-	case 5:
+	default:
 		return true
 	}
-	return false
 }
 
 func (h Hand) isPair2(j int) bool {
 	switch j {
 	case 0:
 		return h.isPair()
-	case 1:
-		return true
-	case 2:
-		return true
-	case 3:
-		return true
-	case 4:
-		return true
-	case 5:
+	default:
 		return true
 	}
-	return false
 }
 
 func (h Hand) handValue2() int {
@@ -293,24 +258,24 @@ func run(input string) string {
 		value := hand.handValue()
 		handInfos = append(handInfos, HandInfo{hand, value, bid})
 	}
+	// sort in reverse order
 	sort.Slice(handInfos, func(i, j int) bool {
-		if handInfos[i].value < handInfos[j].value {
+		if handInfos[i].value > handInfos[j].value {
 			return true
 		}
-		if handInfos[i].value > handInfos[j].value {
+		if handInfos[i].value < handInfos[j].value {
 			return false
 		}
 		for n, v := range handInfos[j].hand.deal {
-			if handInfos[i].hand.deal[n] < v {
+			if handInfos[i].hand.deal[n] > v {
 				return true
 			}
-			if handInfos[i].hand.deal[n] > v {
+			if handInfos[i].hand.deal[n] < v {
 				return false
 			}
 		}
 		return false
 	})
-	slices.Reverse(handInfos)
 	total := 0
 	highestValue := len(handInfos)
 	for i, h := range handInfos {
@@ -331,24 +296,24 @@ func run2(input string) string {
 		value := hand.handValue2()
 		handInfos = append(handInfos, HandInfo{hand, value, bid})
 	}
+	// sort in reverse order
 	sort.Slice(handInfos, func(i, j int) bool {
-		if handInfos[i].value < handInfos[j].value {
+		if handInfos[i].value > handInfos[j].value {
 			return true
 		}
-		if handInfos[i].value > handInfos[j].value {
+		if handInfos[i].value < handInfos[j].value {
 			return false
 		}
 		for n, v := range handInfos[j].hand.deal {
-			if handInfos[i].hand.deal[n] < v {
+			if handInfos[i].hand.deal[n] > v {
 				return true
 			}
-			if handInfos[i].hand.deal[n] > v {
+			if handInfos[i].hand.deal[n] < v {
 				return false
 			}
 		}
 		return false
 	})
-	slices.Reverse(handInfos)
 	total := 0
 	highestValue := len(handInfos)
 	for i, h := range handInfos {

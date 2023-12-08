@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"slices"
 	"strings"
 	"time"
 )
@@ -29,7 +28,7 @@ func main() {
 	inputName := strings.Split(params, " ")[0]
 	text := readInput(inputName)
 	start := time.Now()
-	// run(text)
+	run(text)
 	end := time.Now()
 	fmt.Printf("Running time: %v\n", end.Sub(start))
 	start = time.Now()
@@ -83,85 +82,27 @@ func traverse(directions string, nodes map[string]Node, start string, end string
 	return count
 }
 
-func getStartNodes(nodes map[string]Node) []string {
+func getNodesBySuffix(nodes map[string]Node, suffix string) []string {
 	startNodes := make([]string, 0)
 	for k, _ := range nodes {
-		if strings.HasSuffix(k, "A") {
+		if strings.HasSuffix(k, suffix) {
 			startNodes = append(startNodes, k)
 		}
 	}
 	return startNodes
 }
 
-func isEndStateLengths(counts []int) bool {
-	for _, count := range counts {
-		if count == 0 {
-			return false
-		}
-	}
-	return true
-}
-
-func isEndState(nodes []string) bool {
-	for _, node := range nodes {
-		if !isEndNode(node) {
-			return false
-		}
-	}
-	return true
-}
-
 func isEndNode(nodeName string) bool {
 	return strings.HasSuffix(nodeName, "Z")
 }
 
-func traverseParallel(directions string, nodes map[string]Node, startNodes []string) int {
-	currentNodes := slices.Clone(startNodes)
-	fmt.Printf("Start nodes: %v\n", startNodes)
-	i := 0
-	count := 0
-	for !isEndState(currentNodes) {
-		for n := 0; n < len(currentNodes); n++ {
-			// once we know how
-			node := nodes[currentNodes[n]]
-			direction := directions[i]
-			if direction == 'L' {
-				currentNodes[n] = node.left
-			} else {
-				currentNodes[n] = node.right
-			}
-			// if isEndNode(currentNodes[n]) && counts[n] == 0 {
-			// 	counts[n] = count
-			// }
-			// if count > 0 && currentNodes[n] == startNodes[n] {
-			// 	cycleLengths[n] = count
-			// }
-		}
-		i = (i + 1) % len(directions)
-		count++
-		endCount := 0
-		for _, node := range currentNodes {
-			if isEndNode(node) {
-				endCount++
-			}
-		}
-		if endCount > 0 {
-			fmt.Printf("%v Current nodes: %v\n", count, currentNodes)
-		}
-	}
-	return count
-}
-
-// returns the ending string and the number of steps to get there from the start
-// and the last node visited if the whole instruction set were run from the start
-func traverseNode(directions string, nodes map[string]Node, start string) (string, int, string, int) {
+func traverseNode(directions string, nodes map[string]Node, start string) (string, int) {
 	endNodeName := ""
 	endCount := -1
-	lastNodeName := ""
-	lastCount := 0
 	current := start
 	i := 0
-	for ; i < len(directions); i++ {
+	count := 0
+	for !isEndNode(current) || count == 0 {
 		node := nodes[current]
 		direction := directions[i]
 		if direction == 'L' {
@@ -169,14 +110,12 @@ func traverseNode(directions string, nodes map[string]Node, start string) (strin
 		} else {
 			current = node.right
 		}
-		if isEndNode(current) && endCount == -1 {
-			endNodeName = current
-			endCount = i + 1
-		}
+		i = (i + 1) % len(directions)
+		count = count + 1
 	}
-	lastNodeName = current
-	lastCount = i
-	return endNodeName, endCount, lastNodeName, lastCount
+	endNodeName = current
+	endCount = count
+	return endNodeName, endCount
 }
 
 func run(input string) string {
@@ -188,18 +127,52 @@ func run(input string) string {
 	return fmt.Sprintf("%v", stepCount)
 }
 
+type NodeResult struct {
+	name  string
+	count int
+}
+
+func gcd(a int, b int) int {
+	for b != 0 {
+		t := b
+		b = a % b
+		a = t
+	}
+	return a
+}
+
+func lcm(a int, b int) int {
+	return (a * b) / gcd(a, b)
+}
+
+func lcmSlice(nums []int) int {
+	result := nums[0]
+	for i := 1; i < len(nums); i++ {
+		result = lcm(result, nums[i])
+	}
+	return result
+}
+
 func run2(input string) string {
 	sections := strings.Split(input, "\n\n")
 	directions := sections[0]
 	fmt.Printf("Directions: %v\n", directions)
 	nodes := getNodes(sections[1])
-	// startNodes := getStartNodes(nodes)
-	stepCount := 0
-	for k, _ := range nodes {
-		endNodeName, endCount, lastNodeName, lastCount := traverseNode(directions, nodes, k)
-		fmt.Printf("Start node: %v, end node: %v, end count: %v, last node: %v, last count: %v\n", k, endNodeName, endCount, lastNodeName, lastCount)
+	startNodes := getNodesBySuffix(nodes, "A")
+	mapResults := make(map[string]NodeResult)
+	counts := make([]int, len(startNodes))
+	for i, start := range startNodes {
+		endNodeName, endCount := traverseNode(directions, nodes, start)
+		mapResults[start] = NodeResult{
+			name:  endNodeName,
+			count: endCount,
+		}
+		counts[i] = endCount
 	}
-	// stepCount = traverseParallel(directions, nodes, startNodes)
 
-	return fmt.Sprintf("%v", stepCount)
+	lcm := lcmSlice(counts)
+
+	fmt.Printf("Least common multiple: %v\n", lcm)
+
+	return fmt.Sprintf("%v", lcm)
 }

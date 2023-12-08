@@ -152,6 +152,33 @@ func traverseParallel(directions string, nodes map[string]Node, startNodes []str
 	return count
 }
 
+// returns the ending string and the number of steps to get there from the start
+// and the last node visited if the whole instruction set were run from the start
+func traverseNode(directions string, nodes map[string]Node, start string) (string, int, string, int) {
+	endNodeName := ""
+	endCount := -1
+	lastNodeName := ""
+	lastCount := 0
+	current := start
+	i := 0
+	for ; i < len(directions); i++ {
+		node := nodes[current]
+		direction := directions[i]
+		if direction == 'L' {
+			current = node.left
+		} else {
+			current = node.right
+		}
+		if isEndNode(current) && endCount == -1 {
+			endNodeName = current
+			endCount = i + 1
+		}
+	}
+	lastNodeName = current
+	lastCount = i
+	return endNodeName, endCount, lastNodeName, lastCount
+}
+
 func run(input string) string {
 	sections := strings.Split(input, "\n\n")
 	directions := sections[0]
@@ -164,14 +191,15 @@ func run(input string) string {
 func run2(input string) string {
 	sections := strings.Split(input, "\n\n")
 	directions := sections[0]
+	fmt.Printf("Directions: %v\n", directions)
 	nodes := getNodes(sections[1])
-	startNodes := getStartNodes(nodes)
+	// startNodes := getStartNodes(nodes)
 	stepCount := 0
-	// for i := 0; i < len(startNodes); i++ {
-	// 	stepCount = traverseParallel(directions, nodes, startNodes[i:i+1])
-	// 	fmt.Printf("Step count: %v\n", stepCount)
-	// }
-	stepCount = traverseParallel(directions, nodes, startNodes)
+	for k, _ := range nodes {
+		endNodeName, endCount, lastNodeName, lastCount := traverseNode(directions, nodes, k)
+		fmt.Printf("Start node: %v, end node: %v, end count: %v, last node: %v, last count: %v\n", k, endNodeName, endCount, lastNodeName, lastCount)
+	}
+	// stepCount = traverseParallel(directions, nodes, startNodes)
 
 	return fmt.Sprintf("%v", stepCount)
 }

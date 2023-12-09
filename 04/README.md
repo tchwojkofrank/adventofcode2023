@@ -1,6 +1,4 @@
-# Day 4: Scratchcards
-
-[Link to day 4](https://adventofcode.com/2023/day/4)
+# [Day 4: Scratchcards](https://adventofcode.com/2023/day/4)
 
 ## Part 1
 

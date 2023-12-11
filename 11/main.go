@@ -4,8 +4,11 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"sort"
 	"strings"
 	"time"
+
+	"golang.org/x/exp/maps"
 )
 
 func readInput(fname string) string {
@@ -54,48 +57,54 @@ func mapData(lines []string) map[Point]struct{} {
 	return data
 }
 
-func expandVertically(data map[Point]struct{}, height int, width int, increment int) (map[Point]struct{}, int) {
+func expandVertically(data map[Point]struct{}, increment int) map[Point]struct{} {
 	newMap := make(map[Point]struct{})
+	galaxies := maps.Keys(data)
+	sort.Slice(galaxies, func(i, j int) bool {
+		return galaxies[i].y < galaxies[j].y
+	})
+	prevY := 0
 	y2 := 0
-	for y := 0; y < height; y++ {
-		foundGalaxy := false
-		for x := 0; x < width; x++ {
-			if _, ok := data[Point{x, y}]; ok {
-				newMap[Point{x, y2}] = struct{}{}
-				foundGalaxy = true
-			}
+	for _, galaxy := range galaxies {
+		if galaxy.y == prevY || galaxy.y == prevY+1 {
+			y2 = y2 + (galaxy.y - prevY)
+			prevY = galaxy.y
+			newMap[Point{galaxy.x, y2}] = struct{}{}
+		} else {
+			y2 = y2 + increment*(galaxy.y-prevY-1) + (galaxy.y - prevY)
+			prevY = galaxy.y
+			newMap[Point{galaxy.x, y2}] = struct{}{}
 		}
-		if !foundGalaxy {
-			y2 = y2 + increment
-		}
-		y2++
 	}
-	return newMap, y2
+	return newMap
 }
 
-func expandHorizontally(data map[Point]struct{}, height int, width int, increment int) (map[Point]struct{}, int) {
+func expandHorizontally(data map[Point]struct{}, increment int) map[Point]struct{} {
 	newMap := make(map[Point]struct{})
+	galaxies := maps.Keys(data)
+	sort.Slice(galaxies, func(i, j int) bool {
+		return galaxies[i].x < galaxies[j].x
+	})
 	x2 := 0
-	for x := 0; x < width; x++ {
-		foundGalaxy := false
-		for y := 0; y < height; y++ {
-			if _, ok := data[Point{x, y}]; ok {
-				newMap[Point{x2, y}] = struct{}{}
-				foundGalaxy = true
-			}
+	prevX := 0
+	for _, galaxy := range galaxies {
+		if galaxy.x == prevX || galaxy.x == prevX+1 {
+			x2 = x2 + (galaxy.x - prevX)
+			prevX = galaxy.x
+			newMap[Point{x2, galaxy.y}] = struct{}{}
+		} else {
+			x2 = x2 + increment*(galaxy.x-prevX-1) + (galaxy.x - prevX)
+			prevX = galaxy.x
+			newMap[Point{x2, galaxy.y}] = struct{}{}
 		}
-		if !foundGalaxy {
-			x2 = x2 + increment
-		}
-		x2++
 	}
-	return newMap, x2
+	return newMap
 }
 
-func expandMap(data map[Point]struct{}, height int, width int, increment int) (map[Point]struct{}, int, int) {
-	verticalExpansion, newHeight := expandVertically(data, height, width, increment)
-	expandedMap, newWidth := expandHorizontally(verticalExpansion, newHeight, width, increment)
-	return expandedMap, newHeight, newWidth
+func expandMap(data map[Point]struct{}, increment int) map[Point]struct{} {
+	verticalExpansion := expandVertically(data, increment)
+	expandedMap := expandHorizontally(verticalExpansion, increment)
+	return expandedMap
 }
 
 func (p Point) isLess(q Point) bool {
@@ -132,21 +141,21 @@ func sumAllDistances(data map[Point]struct{}) int {
 
 func run(input string) string {
 	lines := strings.Split(input, "\n")
-	height := len(lines)
-	width := len(lines[0])
 	preExpansion := mapData(lines)
-	currentMap, _, _ := expandMap(preExpansion, height, width, 1)
+	currentMap := expandMap(preExpansion, 1)
+	// printMap(currentMap)
 	distanceSum := sumAllDistances(currentMap)
 	fmt.Printf("Distance sum: %d\n", distanceSum)
 	return fmt.Sprintf("%d", distanceSum)
 }
 
+const ExpansionRate = 1000000
+
 func run2(input string) string {
 	lines := strings.Split(input, "\n")
-	height := len(lines)
-	width := len(lines[0])
 	preExpansion := mapData(lines)
-	currentMap, _, _ := expandMap(preExpansion, height, width, 1000000-1)
+	currentMap := expandMap(preExpansion, ExpansionRate-1)
+	// printMap(currentMap)
 	distanceSum := sumAllDistances(currentMap)
 	fmt.Printf("Distance sum: %d\n", distanceSum)
 	return fmt.Sprintf("%d", distanceSum)

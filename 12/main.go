@@ -33,7 +33,7 @@ func main() {
 	end := time.Now()
 	fmt.Printf("Running time: %v\n", end.Sub(start))
 	start = time.Now()
-	// run2(text)
+	run2(text)
 	end = time.Now()
 	fmt.Printf("Running time: %v\n", end.Sub(start))
 }
@@ -134,7 +134,14 @@ func countArrangements(record string, contiguousCounts []int, depth int) int {
 			break
 		}
 		if len(contiguousCounts) == 1 {
-			count++
+			if contiguousCounts[0]+1 < len(newRecord) {
+				newRecord = newRecord[contiguousCounts[0]+1:]
+				if strings.Count(newRecord, "X") == 0 {
+					count++
+				}
+			} else {
+				count++
+			}
 		} else {
 			if contiguousCounts[0]+1 < len(newRecord) {
 				count += countArrangements(newRecord[contiguousCounts[0]+1:], contiguousCounts[1:], depth+1)
@@ -160,7 +167,7 @@ func run(input string) string {
 		// pattern := regexp.MustCompile(patternString)
 		myCache = make(CalcCache)
 		arrangementCount := countArrangements(conditionString, contiguousCounts, 0)
-		fmt.Printf("Condition: %s\tCounts: %v\tArrangements: %d\n", conditionString, contiguousCounts, arrangementCount)
+		// fmt.Printf("Condition: %s\tCounts: %v\tArrangements: %d\n", conditionString, contiguousCounts, arrangementCount)
 		totalArrangements += arrangementCount
 	}
 	fmt.Printf("Total arrangements: %d\n", totalArrangements)

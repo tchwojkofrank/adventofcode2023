@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"regexp"
 	"strconv"
 	"strings"
 	"time"
@@ -56,44 +55,103 @@ func getContiguousCounts(line string) []int {
 	return contiguousCounts
 }
 
-func makePatern(contiguousCounts []int) string {
-	pattern := "^([oS]*)"
-	for i, contiguousCount := range contiguousCounts {
-		pattern += "("
-		pattern += strings.Repeat("[XS]", contiguousCount)
-		pattern += ")"
-		if i < len(contiguousCounts)-1 {
-			pattern += "([oS]+)"
+func isContiguous(record string, index int, contiguousCount int) bool {
+	i := index
+	for ; i < len(record) && i < index+contiguousCount; i++ {
+		if record[i] != 'X' && record[i] != 'S' {
+			return false
 		}
 	}
-	pattern += "([oS]*)$"
-	return pattern
+	// make sure the next character is not an X or it's at the end of the string
+	if (i < len(record) && record[i] != 'X') || i == len(record) {
+		return true
+	}
+	return false
 }
 
-func countArrangements(record string, pattern *regexp.Regexp) int {
-	// find the index of the first wildcard
-	firstWildcardIndex := strings.Index(record, "S")
-	// if there are no wildcards left, then we can just check the pattern
-	if firstWildcardIndex == -1 {
-		result := pattern.FindString(record)
-		if result != "" {
-			return 1
-		} else {
-			return 0
+// return the indices of the first position of all possible matches for the first contiguousCount
+func findFirstMatches(record string, contiguousCount int) []int {
+	i := 0
+
+	// find the first X in the record
+	firstX := strings.Index(record, "X")
+	if firstX == -1 {
+		firstX = len(record)
+	}
+	// the last position to try is the first X
+	end := min(firstX, len(record)-contiguousCount)
+
+	matches := make([]int, 0)
+
+	for i <= end {
+		if isContiguous(record, i, contiguousCount) {
+			matches = append(matches, i)
 		}
+		i++
 	}
-	// otherwise, we need to check all possible combinations of the first wildcard
+
+	return matches
+}
+
+func min(a int, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
+type CalcCache map[string]int
+
+var myCache CalcCache = make(CalcCache)
+
+func makeCacheKey(record string, contiguousCounts []int) string {
+	return fmt.Sprintf("%s-%v", record, contiguousCounts)
+}
+
+func countArrangements(record string, contiguousCounts []int, depth int) int {
+	// fmt.Print(strings.Repeat("\t", depth))
+	// fmt.Printf("record: %s, contiguousCounts: %v\n", record, contiguousCounts)
+	if len(contiguousCounts) == 0 {
+		return 0
+	}
+	cachedResult, ok := myCache[makeCacheKey(record, contiguousCounts)]
+	if ok {
+		return cachedResult
+	}
 	count := 0
-	newRecordX := record[:firstWildcardIndex] + "X" + record[firstWildcardIndex+1:]
-	resultX := pattern.FindString(newRecordX)
-	if resultX != "" {
-		count += countArrangements(newRecordX, pattern)
+	// iterate over each possible placement of the first contiguousCount, and recurse
+	contiguousCount := contiguousCounts[0]
+	firstMatches := findFirstMatches(record, contiguousCount)
+	if len(firstMatches) == 0 {
+		return 0
 	}
-	newRecordO := record[:firstWildcardIndex] + "o" + record[firstWildcardIndex+1:]
-	resultO := pattern.FindString(newRecordO)
-	if resultO != "" {
-		count += countArrangements(newRecordO, pattern)
+	i := 0
+	for _, i = range firstMatches {
+		newRecord := record[i:]
+		// fmt.Print(strings.Repeat("\t", depth))
+		// fmt.Printf("\tnewRecord: %s, counts: %v\n", newRecord, contiguousCounts)
+		if len(firstMatches) == 0 {
+			break
+		}
+		if len(contiguousCounts) == 1 {
+			if contiguousCounts[0]+1 < len(newRecord) {
+				newRecord = newRecord[contiguousCounts[0]+1:]
+				if strings.Count(newRecord, "X") == 0 {
+					count++
+				}
+			} else {
+				count++
+			}
+		} else {
+			if contiguousCounts[0]+1 < len(newRecord) {
+				count += countArrangements(newRecord[contiguousCounts[0]+1:], contiguousCounts[1:], depth+1)
+			}
+		}
+		// fmt.Print(strings.Repeat("\t", depth))
+		// fmt.Printf("count: %d\n", count)
 	}
+
+	myCache[makeCacheKey(record, contiguousCounts)] = count
 	return count
 }
 
@@ -105,9 +163,11 @@ func run(input string) string {
 		conditionString := fields[0]
 		conditionString = replaceChars(conditionString)
 		contiguousCounts := getContiguousCounts(fields[1])
-		patternString := makePatern(contiguousCounts)
-		pattern := regexp.MustCompile(patternString)
-		arrangementCount := countArrangements(conditionString, pattern)
+		// patternString := makePatern(contiguousCounts)
+		// pattern := regexp.MustCompile(patternString)
+		myCache = make(CalcCache)
+		arrangementCount := countArrangements(conditionString, contiguousCounts, 0)
+		// fmt.Printf("Condition: %s\tCounts: %v\tArrangements: %d\n", conditionString, contiguousCounts, arrangementCount)
 		totalArrangements += arrangementCount
 		fmt.Printf("Condition: %v\tCounts: %v\tArrangements: %v\n", conditionString, contiguousCounts, arrangementCount)
 	}
@@ -122,15 +182,15 @@ func unfold(line string, separator string) string {
 func run2(input string) string {
 	lines := strings.Split(input, "\n")
 	totalArrangements := 0
-	for i, line := range lines {
-		fmt.Printf("Processing line %d\n", i)
+	for _, line := range lines {
 		fields := strings.Split(line, " ")
 		conditionString := unfold(fields[0], "?")
 		conditionString = replaceChars(conditionString)
 		contiguousCounts := getContiguousCounts(unfold(fields[1], ","))
-		patternString := makePatern(contiguousCounts)
-		pattern := regexp.MustCompile(patternString)
-		arrangementCount := countArrangements(conditionString, pattern)
+		// patternString := makePatern(contiguousCounts)
+		// pattern := regexp.MustCompile(patternString)
+		myCache = make(CalcCache)
+		arrangementCount := countArrangements(conditionString, contiguousCounts, 0)
 		totalArrangements += arrangementCount
 	}
 	fmt.Printf("Total arrangements: %d\n", totalArrangements)

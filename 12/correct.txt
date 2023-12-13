@@ -1,0 +1,1000 @@
+Condition: ooSSSoSSoS	Counts: [1 1 1]	Arrangements: 9
+Condition: SXSXXSSSoSSSS	Counts: [2 5 1 1]	Arrangements: 3
+Condition: SXSSSSSSXXS	Counts: [1 1 2]	Arrangements: 4
+Condition: SXoXSXSSXSSS	Counts: [1 7 1]	Arrangements: 1
+Condition: SXSSSXSXSSoXoXXXoS	Counts: [3 1 3 1 3 1]	Arrangements: 2
+Condition: SXooooooXoSoSo	Counts: [1 1 1]	Arrangements: 2
+Condition: oSSSSXSSSSS	Counts: [2 1 2]	Arrangements: 7
+Condition: XoSoooSXSSSSXSSS	Counts: [1 7 1]	Arrangements: 3
+Condition: SoXSSoSSXS	Counts: [2 1 1]	Arrangements: 1
+Condition: oXSSSXXXSXSSXSSSXSoS	Counts: [7 1 7]	Arrangements: 1
+Condition: SXXXSoSSXSSooS	Counts: [5 4]	Arrangements: 2
+Condition: oXSoSSXSSSSXSoSo	Counts: [2 4 1 1]	Arrangements: 4
+Condition: XoXSSSSSSS	Counts: [1 1 4]	Arrangements: 3
+Condition: XSSSSXXoSSSXSSSo	Counts: [1 1 2 1 5]	Arrangements: 2
+Condition: SoSoXXSSSXSSSXXoS	Counts: [2 7]	Arrangements: 1
+Condition: SSSSoSXSoS	Counts: [2 2]	Arrangements: 6
+Condition: SSoXSSSSSXSSXo	Counts: [1 10]	Arrangements: 2
+Condition: SSSSSSSoSSSXSS	Counts: [6 1 2]	Arrangements: 6
+Condition: XSoXSSSoSS	Counts: [2 4 1]	Arrangements: 2
+Condition: SXXXXSSSSoSoSS	Counts: [4 3 2]	Arrangements: 1
+Condition: SSSSSXSSSS	Counts: [6 1]	Arrangements: 6
+Condition: SSSSoSSSSSSSXSXoS	Counts: [1 5]	Arrangements: 8
+Condition: oXSSSXXoSXSSXSSS	Counts: [6 5]	Arrangements: 2
+Condition: SSXSXSSSSSSSSSSSSSo	Counts: [8 4 1]	Arrangements: 19
+Condition: SSSoSSSSXSXoSSSS	Counts: [7 4]	Arrangements: 1
+Condition: SXSSSXSoSSSSSSSSSS	Counts: [2 1 8 1]	Arrangements: 2
+Condition: XSoXSXSoSS	Counts: [1 3 2]	Arrangements: 1
+Condition: SoSSXXSSSSSSoSo	Counts: [1 5 1]	Arrangements: 15
+Condition: SSSSXSSSSSSSSXSSSSoS	Counts: [5 9]	Arrangements: 10
+Condition: SoXSXSSSSS	Counts: [1 5]	Arrangements: 2
+Condition: SSSSSSXoSSoSSoS	Counts: [1 5 1 2]	Arrangements: 2
+Condition: XXSXSSSSSSXoXSXSSS	Counts: [5 1 2 6]	Arrangements: 2
+Condition: SSSSoSXXSXooX	Counts: [2 3 1 1]	Arrangements: 3
+Condition: SSoSooSSSoSXSXS	Counts: [2 4]	Arrangements: 6
+Condition: SSSXXSSSoSXSSXSX	Counts: [1 5 6]	Arrangements: 3
+Condition: SSoSSSSXSSSSSXSS	Counts: [1 9]	Arrangements: 12
+Condition: SSXXSXSSSSoXSSSoXSSS	Counts: [1 8 4 1 1]	Arrangements: 2
+Condition: XXSXSSSSSSSo	Counts: [4 1 3]	Arrangements: 3
+Condition: SXSSSXXSSSSSXS	Counts: [1 1 6 1]	Arrangements: 1
+Condition: SSSSSSSSXXSXSSSSSS	Counts: [1 14]	Arrangements: 6
+Condition: SSSSXSSSSoSSS	Counts: [1 2 1 1]	Arrangements: 45
+Condition: SXXoSSSoXSSSoXSoSSX	Counts: [3 1 1 4 2 1]	Arrangements: 1
+Condition: SXXSSSSSSSS	Counts: [2 2 1]	Arrangements: 10
+Condition: SSSSSXSSSSSSoSSX	Counts: [1 5 1 1]	Arrangements: 31
+Condition: XSXSSSSSSSSSXoS	Counts: [5 1 1 2 1]	Arrangements: 3
+Condition: oSoSoSSoXo	Counts: [1 1 1]	Arrangements: 5
+Condition: oSXoSSXSXSSSSSXXXSo	Counts: [2 12]	Arrangements: 2
+Condition: SSoSSSSSXSSSoSSSS	Counts: [1 1 1 4 2]	Arrangements: 24
+Condition: SSSSSSXSXXSXSS	Counts: [2 6]	Arrangements: 5
+Condition: ooSSSSXSXXSSSS	Counts: [1 4 1]	Arrangements: 10
+Condition: oSXSXSSoXSSSo	Counts: [2 1 1 1]	Arrangements: 3
+Condition: oSSSSSSXSS	Counts: [1 1 1]	Arrangements: 11
+Condition: SXSoSXSSSXSSSXS	Counts: [1 4 1 2]	Arrangements: 2
+Condition: SSSSSSSSSSXSSSXXSo	Counts: [1 1 10]	Arrangements: 16
+Condition: SSSXXSSSSoSSS	Counts: [1 4 1 2]	Arrangements: 8
+Condition: oSSSXSSoXXSSSSSSSXXS	Counts: [5 3 1 6]	Arrangements: 2
+Condition: SXSSXSSSoSSS	Counts: [1 1 1]	Arrangements: 5
+Condition: oSSooSSSSSXo	Counts: [1 4 1]	Arrangements: 2
+Condition: SSSXSSSSSoo	Counts: [1 3 1]	Arrangements: 7
+Condition: SXSSSoSXSSSXSooXSSX	Counts: [2 1 5 1 2]	Arrangements: 3
+Condition: SXSSXSoSSSoXSSSo	Counts: [1 3 1 2]	Arrangements: 4
+Condition: oXSSXSoSSSXSSSXSS	Counts: [1 1 9]	Arrangements: 2
+Condition: SoSXSXXoooSSS	Counts: [1 4 1 1]	Arrangements: 1
+Condition: SSXSXSXSSXXSSSSSSSo	Counts: [3 3 3 1 3]	Arrangements: 4
+Condition: SSSXSXSoSSXS	Counts: [6 3]	Arrangements: 4
+Condition: SXSoXSSXXoXS	Counts: [1 1 2 2]	Arrangements: 1
+Condition: SSSSSXXSSXSSS	Counts: [6 3 1]	Arrangements: 1
+Condition: SSSSXXSSSS	Counts: [1 2]	Arrangements: 3
+Condition: SSSoSSSoSSSoSo	Counts: [2 2 3]	Arrangements: 4
+Condition: SSXSSSSSSSSSSSSX	Counts: [5 1 1 3]	Arrangements: 19
+Condition: SSSSXSoSooSSSSoSSX	Counts: [2 1 1 2 1 1]	Arrangements: 12
+Condition: oSXXSXXSSSS	Counts: [3 4]	Arrangements: 1
+Condition: SooSSSSSSXS	Counts: [1 1 5]	Arrangements: 3
+Condition: ooSSSSSXoSoXXSXoSS	Counts: [4 4]	Arrangements: 1
+Condition: XSSSoSSSSSS	Counts: [2 2]	Arrangements: 5
+Condition: SoSSXSSSSSSoS	Counts: [1 4 2]	Arrangements: 7
+Condition: SXXXSSXSSSoSXSoSS	Counts: [3 1 1 2 1]	Arrangements: 8
+Condition: SSSSSSSSSoSSSSSSSSX	Counts: [1 1 1 2 4]	Arrangements: 138
+Condition: SSXoSSXSXXoSSSoSSSS	Counts: [1 1 6 3 1 1]	Arrangements: 3
+Condition: SSSXoXXXSSSSo	Counts: [3 4 1]	Arrangements: 2
+Condition: SXoSSSSSSSSSoSX	Counts: [1 3 3 1]	Arrangements: 6
+Condition: XoSSSXoSSSSSSSSXSS	Counts: [1 1 1 2 7]	Arrangements: 6
+Condition: SSSXSoSSSSSoXS	Counts: [1 1 4 1]	Arrangements: 4
+Condition: SSSXooSSSoS	Counts: [3 3]	Arrangements: 1
+Condition: SoSSSSXXXXXSSXoSXSS	Counts: [1 1 9 1 1]	Arrangements: 2
+Condition: SSSSXoSXSSSS	Counts: [2 1 5]	Arrangements: 4
+Condition: oXSXooXSSSSSSSSSSS	Counts: [3 1 9]	Arrangements: 2
+Condition: SoSSooSSSS	Counts: [2 1]	Arrangements: 5
+Condition: SSSSSSSXSSoSSSSSSSoS	Counts: [1 1 4 1 1 2]	Arrangements: 50
+Condition: ooSSoSSSSSSS	Counts: [1 1]	Arrangements: 29
+Condition: SSoSSSSSXXSS	Counts: [1 6]	Arrangements: 9
+Condition: SSSSSSSSXXSSoSSSSS	Counts: [1 7 1 1 1]	Arrangements: 21
+Condition: SSSoSXXXSSSS	Counts: [1 5]	Arrangements: 6
+Condition: XoSXXXSSXSXSSSSSSSS	Counts: [1 4 1 1 3 1]	Arrangements: 12
+Condition: SSSSoSSSSSSSSSSSS	Counts: [2 1 7]	Arrangements: 37
+Condition: XSXSSXSSSSoSXSSSSS	Counts: [7 1 1 1]	Arrangements: 11
+Condition: SXXSSSXoSXSSSXSXXSSX	Counts: [3 1 2 4 1]	Arrangements: 4
+Condition: SSSXSSXSSSSSoSXXS	Counts: [7 3]	Arrangements: 8
+Condition: SSSSSSSSSooSSS	Counts: [1 5 1]	Arrangements: 19
+Condition: oSSSXSSSoSSSSXoS	Counts: [5 1 1 1]	Arrangements: 16
+Condition: SXSSSSSXSSSSS	Counts: [2 3 1]	Arrangements: 19
+Condition: oSSSXSSSXSSSooSSXXo	Counts: [5 1 4]	Arrangements: 4
+Condition: SSSSSoSXXoX	Counts: [5 2 1]	Arrangements: 1
+Condition: SSXSSSSXSoX	Counts: [5 2 1]	Arrangements: 3
+Condition: XSoSSSSXSSSXSSSSS	Counts: [2 1 2 1 2]	Arrangements: 18
+Condition: SSSSSSSSoSSoSSSSSS	Counts: [7 5]	Arrangements: 4
+Condition: ooXSXSSXXXoSSSSSSS	Counts: [8 3]	Arrangements: 5
+Condition: XSoSSoSSXXSoSXS	Counts: [1 1 5 3]	Arrangements: 2
+Condition: oXSSSSXSXSXXSo	Counts: [1 8]	Arrangements: 2
+Condition: SXSSSSSXoS	Counts: [1 3]	Arrangements: 1
+Condition: oSSSoSooXS	Counts: [1 1 1]	Arrangements: 4
+Condition: SSoSSoSSSSS	Counts: [2 1]	Arrangements: 15
+Condition: SXSSSSSSXSSXXSXXooo	Counts: [1 11]	Arrangements: 1
+Condition: oXSSSSSSSSSS	Counts: [1 1 3 1]	Arrangements: 10
+Condition: SSXSSSSXSSSSSXSSXSS	Counts: [8 5]	Arrangements: 6
+Condition: SXSSXSSSooXXoSS	Counts: [7 2 2]	Arrangements: 2
+Condition: SoSSSSoXSSXSoSXXSS	Counts: [1 1 1 2 5]	Arrangements: 14
+Condition: oSoSSSSSSSSXSSXXSSS	Counts: [1 2 5 4]	Arrangements: 8
+Condition: SoSSSXXSoSSSSXSSSXX	Counts: [5 3 4]	Arrangements: 2
+Condition: XooXSXXSXSXSSSSSS	Counts: [1 8 4]	Arrangements: 2
+Condition: SSSSSXXSoSXoSS	Counts: [1 4 2 1]	Arrangements: 10
+Condition: SSSSSSSSSo	Counts: [4 1]	Arrangements: 10
+Condition: SSSXSSoSSSSSSSXSo	Counts: [5 5 1]	Arrangements: 4
+Condition: SoSSSoSXSSSSXXSSSX	Counts: [1 1 8 1 1]	Arrangements: 4
+Condition: SSSSSSSooSSSSS	Counts: [1 3 4]	Arrangements: 12
+Condition: SXSXXSSXSSSSSXSXSSSS	Counts: [8 6]	Arrangements: 8
+Condition: SSSXSSSSXoSSSSSSooSo	Counts: [5 3 6 1]	Arrangements: 1
+Condition: SoSSXXSSSoSSXS	Counts: [6 2]	Arrangements: 4
+Condition: SSoSSoSSSXSSSSXSSS	Counts: [2 1 8]	Arrangements: 12
+Condition: SSSSSXXSSSSoXSo	Counts: [1 1 7 1]	Arrangements: 1
+Condition: SSoSSXSSoSoXXS	Counts: [5 3]	Arrangements: 1
+Condition: SSSoSXSXSSooSS	Counts: [1 5 1]	Arrangements: 12
+Condition: oXSSSSXXSSSSSS	Counts: [1 7 1]	Arrangements: 6
+Condition: oSSSSSSooXSo	Counts: [1 1 1]	Arrangements: 10
+Condition: XSXSSXXoSoSSo	Counts: [7 1]	Arrangements: 3
+Condition: SXXSXSSSooSXoSSSX	Counts: [4 1 2 1 1]	Arrangements: 4
+Condition: SSSSSSSXSS	Counts: [3 3]	Arrangements: 9
+Condition: SoSSSSoXSXSSXXoSSoS	Counts: [1 1 4 2 1 1]	Arrangements: 14
+Condition: SoSSSSSXXSoS	Counts: [1 1 5 1]	Arrangements: 3
+Condition: oXSSSoSoSXXoSoS	Counts: [1 1 2 1 1]	Arrangements: 3
+Condition: XoSSoSXSXS	Counts: [1 1 3]	Arrangements: 2
+Condition: SSSSSoSXSSXSSSX	Counts: [1 1 8]	Arrangements: 6
+Condition: oSSXSXXSSoSSoX	Counts: [1 6 1 1]	Arrangements: 2
+Condition: XSSSSSSXSSXSSSXS	Counts: [1 6 1 2]	Arrangements: 5
+Condition: oSSooSXSSSSXSSSXSSS	Counts: [2 3 7]	Arrangements: 5
+Condition: oSSXoSSXXoSXSoXSXS	Counts: [1 1 4 1 3]	Arrangements: 1
+Condition: SSSoSSXSSSoSSSo	Counts: [2 1 1 2]	Arrangements: 14
+Condition: SXSooSSSXSSoS	Counts: [1 2 3]	Arrangements: 1
+Condition: SXSSXoXSSSSSSSSoSoSS	Counts: [1 1 6 1 1 2]	Arrangements: 2
+Condition: XSSXXSXSSSSoSXSSSXX	Counts: [1 4 1 1 1 2]	Arrangements: 4
+Condition: oSSSXSSSSSS	Counts: [1 2 1]	Arrangements: 16
+Condition: SSoSoSXXooSSXSo	Counts: [1 2 3]	Arrangements: 6
+Condition: SoXSoXSXSSXSSXSS	Counts: [2 3 6]	Arrangements: 2
+Condition: SXSSoXSSoSSSSSSSS	Counts: [1 1 2 6]	Arrangements: 3
+Condition: SXSSoXSSSXSSSXoSSoSS	Counts: [4 1 6 1 1]	Arrangements: 4
+Condition: XXSSSSXSoSSSSSSX	Counts: [4 1 2 1]	Arrangements: 4
+Condition: ooSXXSSSSoo	Counts: [3 3]	Arrangements: 1
+Condition: oSSXSoSSSS	Counts: [3 1]	Arrangements: 8
+Condition: SSooSSSSXSoSS	Counts: [1 2 2 2]	Arrangements: 6
+Condition: SoSSSSoSSSoXooXS	Counts: [2 1 1 1 2]	Arrangements: 6
+Condition: SSXSXXSXSSXXo	Counts: [6 3]	Arrangements: 1
+Condition: SSSSSSSSoSSSSSoSoX	Counts: [1 1 3 1 1 1]	Arrangements: 65
+Condition: oSXSXXXSXSSSSSoSSSS	Counts: [8 2 3]	Arrangements: 10
+Condition: oSSSXXSSXSoSS	Counts: [5 3 1]	Arrangements: 2
+Condition: oSXSSXXSSXoSX	Counts: [9 1]	Arrangements: 1
+Condition: SXXSSSoSSSSSSS	Counts: [3 1 1 2]	Arrangements: 38
+Condition: SXSXSXSSSSSSSSSSSSSS	Counts: [6 1 1 1 1 1]	Arrangements: 182
+Condition: oSSXSSXXSSSXSSSSo	Counts: [11 1]	Arrangements: 6
+Condition: SXoXSSSSXXSS	Counts: [2 1 1 4]	Arrangements: 3
+Condition: SoSoSoSSXSSSSSoSSX	Counts: [1 1 8 1 1]	Arrangements: 3
+Condition: SoSSoSSSSSoS	Counts: [1 1 4 1]	Arrangements: 4
+Condition: SoXSSSoXXoSSSSoSSS	Counts: [1 2 1 2 3 2]	Arrangements: 4
+Condition: oSoXSSXSSS	Counts: [1 1 1]	Arrangements: 3
+Condition: SoSSSSSSSXX	Counts: [6 2]	Arrangements: 1
+Condition: SoSoXSoXXSSSoSo	Counts: [1 2 2 1 1]	Arrangements: 4
+Condition: SSSooSoSSXSSSXSSSSX	Counts: [2 1 1 1 3 2]	Arrangements: 10
+Condition: SSSSSSSSSoSSXS	Counts: [2 1 2]	Arrangements: 50
+Condition: oSoSXoXSSXSSSSSXSSS	Counts: [1 1 4 1 1 1]	Arrangements: 9
+Condition: SSSSXSSoSXSSSSXSSS	Counts: [4 4 2]	Arrangements: 9
+Condition: oSSSSoSooSoSSoSXoSo	Counts: [1 2]	Arrangements: 8
+Condition: SSXSSSSSXSXSSoSSXSSS	Counts: [1 1 8 4 1]	Arrangements: 2
+Condition: SSSSSSSSSS	Counts: [1 4]	Arrangements: 15
+Condition: SoSXSSoSXSSSSSXS	Counts: [2 3 4]	Arrangements: 6
+Condition: SSSoXXoSSoSSS	Counts: [1 2 1 1]	Arrangements: 21
+Condition: oSoSSSSSSSXoXoo	Counts: [8 1]	Arrangements: 1
+Condition: XSSoSSSSXXXSSSSSSS	Counts: [1 1 3 8]	Arrangements: 1
+Condition: SSXSXoXSSooSS	Counts: [3 2]	Arrangements: 1
+Condition: XooSSoSSSSXSSSoXSXSo	Counts: [1 1 5 1 1 1]	Arrangements: 6
+Condition: SSoSSoSSSXSSoS	Counts: [2 1 6 1]	Arrangements: 2
+Condition: oSSSSXXSSSS	Counts: [1 7]	Arrangements: 3
+Condition: oSXXXSoSSoS	Counts: [4 1 1]	Arrangements: 4
+Condition: SoSXSSXSoXooSSXSSS	Counts: [6 1 1 1 1]	Arrangements: 2
+Condition: oSSSSSSoSX	Counts: [4 1]	Arrangements: 3
+Condition: XXSSSSoSSSSSoSS	Counts: [6 2 1 1]	Arrangements: 6
+Condition: oSSSSSXoSS	Counts: [1 3 1]	Arrangements: 4
+Condition: SoSSSSXSSXSSSSSS	Counts: [6 3 1]	Arrangements: 4
+Condition: oSSSSXSoXSoSSSSSXSX	Counts: [6 2 6 1]	Arrangements: 1
+Condition: oSoSSSXSSSSXXXSSSXXS	Counts: [4 10]	Arrangements: 5
+Condition: SooSXSSSSS	Counts: [4 1]	Arrangements: 3
+Condition: oSSXSSoSXXoSoXSXSXS	Counts: [3 3 1 1 1 2]	Arrangements: 3
+Condition: ooSSXoSSSSSSoS	Counts: [3 1]	Arrangements: 7
+Condition: SSSSSSSSSSXSSSSSoo	Counts: [1 6 1]	Arrangements: 53
+Condition: SSXSSSSXSSSSSXXXSS	Counts: [7 6]	Arrangements: 6
+Condition: SSSooXSSSS	Counts: [1 1 1]	Arrangements: 11
+Condition: ooXSXSSoooSSSXSoS	Counts: [1 1 1 4 1]	Arrangements: 2
+Condition: ooXooSSSSXSSSXXXXo	Counts: [1 10]	Arrangements: 1
+Condition: SXSSSSSSoSSS	Counts: [1 2 1 1]	Arrangements: 13
+Condition: SSSSSSoXSSSo	Counts: [5 4]	Arrangements: 2
+Condition: SSXSXoSSSSS	Counts: [4 1 2]	Arrangements: 3
+Condition: SXSSoSSoSSXoS	Counts: [1 1 2 2]	Arrangements: 1
+Condition: XSSSoSSXSSXSoSXSSXXS	Counts: [1 1 1 5 7]	Arrangements: 2
+Condition: SSSoSSXSoSXSS	Counts: [1 4 1]	Arrangements: 3
+Condition: oSSSSSSXSSSXSSSSXSo	Counts: [3 5 6]	Arrangements: 1
+Condition: SSSSSSSXSS	Counts: [2 2]	Arrangements: 9
+Condition: XSSXSXSXXXSooSSXSSSS	Counts: [1 4 4 1 3]	Arrangements: 2
+Condition: SXXSSSSSSXSXXSSSS	Counts: [4 2 7]	Arrangements: 4
+Condition: SSSSSSSooSoXSSSS	Counts: [5 1 1 4]	Arrangements: 1
+Condition: SSSSSSSSSXSSSXSSS	Counts: [1 1 1 7 2]	Arrangements: 4
+Condition: SoXXoSSSSSSSXSSSo	Counts: [2 6 1 1]	Arrangements: 2
+Condition: oSXXSXSoSXSooSo	Counts: [5 3]	Arrangements: 2
+Condition: oSSSSoSoSo	Counts: [2 1]	Arrangements: 7
+Condition: SSXSSXSoSSSSoSSooS	Counts: [5 2 2 1]	Arrangements: 6
+Condition: SSSSXXSXSSSo	Counts: [1 3 1 1]	Arrangements: 4
+Condition: XSoSSXXSXXXoSSXS	Counts: [1 1 6 1 2]	Arrangements: 1
+Condition: SoSoSXSoXSoS	Counts: [1 3 1 1]	Arrangements: 2
+Condition: SSSSSSSSSXXSSSXXSSSo	Counts: [2 2 3 6]	Arrangements: 22
+Condition: XSSSSSSSSoSSSXXoS	Counts: [4 4 5]	Arrangements: 1
+Condition: SSSSSSSooSSSS	Counts: [5 1 3]	Arrangements: 2
+Condition: SSoSSSSXXSSSSXXXSSS	Counts: [2 1 5 5 1]	Arrangements: 5
+Condition: SSoooSSXSSSSXSSSo	Counts: [2 8 1]	Arrangements: 3
+Condition: SSSXSSSSSSS	Counts: [1 3 2]	Arrangements: 11
+Condition: SSSSoSSooSoSS	Counts: [2 1]	Arrangements: 19
+Condition: oSSSoXSSSSSo	Counts: [1 6]	Arrangements: 3
+Condition: SSXSSSSSXoSSoXSS	Counts: [3 1 1 1 1]	Arrangements: 25
+Condition: XXSoSSSXXSSSSSSSSS	Counts: [2 4 1 2 1]	Arrangements: 15
+Condition: SSSXXXSSXXSoSoSoSSSS	Counts: [9 2]	Arrangements: 6
+Condition: SSSXSSSSoS	Counts: [1 6]	Arrangements: 1
+Condition: SSXSSSXSooXoXSS	Counts: [5 2 1 3]	Arrangements: 1
+Condition: oSSXSSSSSSSSXS	Counts: [8 1]	Arrangements: 3
+Condition: SoSXSSXSSSSXSSS	Counts: [1 5 1 2]	Arrangements: 7
+Condition: SSSooSoSSSSXSSSXoS	Counts: [1 1 1 3 1 1]	Arrangements: 37
+Condition: SSSSXXSSSoXSXSo	Counts: [4 4]	Arrangements: 3
+Condition: SSXSoXSSSS	Counts: [3 2]	Arrangements: 2
+Condition: SoXSSXSSSXSSSSS	Counts: [1 6 1 1 1]	Arrangements: 3
+Condition: SSSSSSXSXSSXSoSSSS	Counts: [1 1 7 1 1]	Arrangements: 27
+Condition: SoSSSSSoSo	Counts: [2 1 1]	Arrangements: 3
+Condition: oSSXXSoSXSSSS	Counts: [2 2]	Arrangements: 2
+Condition: oXSSXSSXSSSSSoSSXoS	Counts: [1 5 2 2]	Arrangements: 5
+Condition: SoSSXSoSSSX	Counts: [3 1 2]	Arrangements: 2
+Condition: SooSSSSSSSS	Counts: [1 5]	Arrangements: 7
+Condition: XSSSSSSSSSXSXSSoSXo	Counts: [2 1 2 7 2]	Arrangements: 1
+Condition: SoSSSSSXXoSXSSX	Counts: [1 2 2 2 1]	Arrangements: 8
+Condition: SSSSSoSSXXo	Counts: [2 4]	Arrangements: 4
+Condition: SSXXSSXSSoSXSSSSSo	Counts: [1 6 6]	Arrangements: 2
+Condition: SSSXXXSSSS	Counts: [5 1]	Arrangements: 6
+Condition: XXXSSSXSSSoSSSSSSSSo	Counts: [4 1 1 1 2 1]	Arrangements: 21
+Condition: SSoSSSXoSXSo	Counts: [2 3 1]	Arrangements: 1
+Condition: SXSoSSXSoSXSSSSXSS	Counts: [1 2 1 3]	Arrangements: 6
+Condition: SSSSSSSSSXSS	Counts: [1 7]	Arrangements: 9
+Condition: SSSSSSSSSSSSSSSSSSoS	Counts: [1 5 4 4 1]	Arrangements: 5
+Condition: SXoSoSSSXSS	Counts: [1 5]	Arrangements: 2
+Condition: SXXXSSSSSXSSS	Counts: [5 2 3]	Arrangements: 1
+Condition: SoSSSXSSSXSSSSSSo	Counts: [1 1 4 2 1]	Arrangements: 7
+Condition: SSSSSXSSXXXXoXXSSXS	Counts: [6 4 2 3]	Arrangements: 2
+Condition: SSSoXSSSoSSSXSSSS	Counts: [4 4]	Arrangements: 4
+Condition: SSXSoXSXXXSSSSS	Counts: [1 6 2]	Arrangements: 2
+Condition: SSSSSSXSXSXSSSoSSSSS	Counts: [2 8 3 1]	Arrangements: 10
+Condition: oSSSSSoSSSSSSSSSSSS	Counts: [1 4 3]	Arrangements: 85
+Condition: SSSSSoSXXSSSS	Counts: [4 3]	Arrangements: 4
+Condition: SSSXSSSoSSXSSS	Counts: [4 1 4]	Arrangements: 13
+Condition: XSSSSSoSoXo	Counts: [3 1 1]	Arrangements: 3
+Condition: oSXXSSSXXSXSSSSSSo	Counts: [2 1 4 1 1 1]	Arrangements: 1
+Condition: SSSSSSXSoSSSSo	Counts: [6 3]	Arrangements: 4
+Condition: SoSSSXSXSXSSoXSSX	Counts: [2 1 5 1 1]	Arrangements: 1
+Condition: SSSXXSXXSoSoSSXoS	Counts: [8 3]	Arrangements: 2
+Condition: SSSXSSSSSSSooSS	Counts: [1 1 1 2 1]	Arrangements: 28
+Condition: SSXSSSXoSSXSSooSSS	Counts: [7 1 3 1]	Arrangements: 3
+Condition: SSSSXSoSoXoSS	Counts: [5 1 1 1]	Arrangements: 4
+Condition: XSSXXoSXSSSSXSSSS	Counts: [1 2 1 5 1]	Arrangements: 3
+Condition: SSSXoSSSSooSXXSS	Counts: [4 1 2 1]	Arrangements: 4
+Condition: SSSXSSSSSoSSoSSSSX	Counts: [5 1 1 1 2]	Arrangements: 28
+Condition: SSSSoSoSSXSSSSSXS	Counts: [1 1 1 1 8]	Arrangements: 3
+Condition: SSSXSSSXSSXX	Counts: [2 5 2]	Arrangements: 1
+Condition: XoSSSSXSoSXSSSSSSSSS	Counts: [1 5 1 1 1 1]	Arrangements: 40
+Condition: XXSXSXSoSS	Counts: [6 1]	Arrangements: 2
+Condition: oXSXSSSSSSXSSSSoSS	Counts: [1 2 3 2 1]	Arrangements: 10
+Condition: SXSSSSSoXSS	Counts: [7 2]	Arrangements: 1
+Condition: SSSXSSSSoSo	Counts: [1 4]	Arrangements: 3
+Condition: SoXoSoSSSoXXoXX	Counts: [1 1 2 2 2]	Arrangements: 4
+Condition: SSSSSSSoSoSSXSSXoS	Counts: [2 4]	Arrangements: 6
+Condition: SSSSoSSSoXSS	Counts: [2 2 1 1]	Arrangements: 6
+Condition: oSSXSXSSSSSXSXSSXS	Counts: [5 3 4 2]	Arrangements: 1
+Condition: XXSSSSSSSSSoSSSSSS	Counts: [6 2 2 2]	Arrangements: 9
+Condition: SSSXSSSSSSSS	Counts: [1 1 2 1]	Arrangements: 24
+Condition: SSSSSSSSSSSooSSXS	Counts: [2 1 1 1 3]	Arrangements: 70
+Condition: SSSSSoSSoSSSS	Counts: [5 1 3]	Arrangements: 4
+Condition: SSSSSSSSSooSX	Counts: [1 2 2 1]	Arrangements: 10
+Condition: SSSSSSSSSSoSXooSS	Counts: [3 4 2]	Arrangements: 6
+Condition: SSSXSXSSSSSXooSSSSS	Counts: [9 3]	Arrangements: 3
+Condition: SSSSSSoSXSSXSSSXS	Counts: [1 4 1 6]	Arrangements: 2
+Condition: SSXSXSSSSoSSS	Counts: [5 1]	Arrangements: 15
+Condition: SSSXoSXSSSSSXXo	Counts: [3 9]	Arrangements: 1
+Condition: SSSSSXSSSoSSSSXS	Counts: [2 1 4 1 3]	Arrangements: 3
+Condition: oSSXSSSooSSSS	Counts: [6 3]	Arrangements: 2
+Condition: SXoSXooSSo	Counts: [1 2 2]	Arrangements: 1
+Condition: oSSSSSSSSoS	Counts: [1 2 1]	Arrangements: 25
+Condition: SSoSXSSoSSSS	Counts: [1 2 1 1]	Arrangements: 20
+Condition: oSooXSoSSoSoSSS	Counts: [1 1 2 1 1]	Arrangements: 4
+Condition: SSSXSXSSSSXXXSSSS	Counts: [2 1 3 4 2]	Arrangements: 3
+Condition: SSSSooSSXX	Counts: [1 2 4]	Arrangements: 1
+Condition: SSSSSSSSooSSSXSSSSXS	Counts: [1 3 1 9]	Arrangements: 8
+Condition: SSXSSSSoXXSooSSS	Counts: [5 2 2]	Arrangements: 6
+Condition: SSSSSSSXXoSSSXSo	Counts: [3 5 3]	Arrangements: 2
+Condition: SXSSSoSSSSSSSS	Counts: [4 8]	Arrangements: 2
+Condition: SSSSSSSXSSSooXSoS	Counts: [4 5 2 1]	Arrangements: 3
+Condition: SSSoSSXXSSSSoXSSoS	Counts: [1 8 1 1 1]	Arrangements: 3
+Condition: SSoSXXXSSSoSSXoSS	Counts: [1 6 1 1 1]	Arrangements: 8
+Condition: SSSoXXSSXSXS	Counts: [3 7]	Arrangements: 1
+Condition: oSSoSSSSSSSSSSSS	Counts: [1 6 5]	Arrangements: 2
+Condition: SXSXSoSSoSSoSSS	Counts: [5 1 1 1]	Arrangements: 16
+Condition: SSSSSXSSSSXSSSXSSXo	Counts: [5 2 5]	Arrangements: 7
+Condition: SSXSXSoSSXSSXSSSSSSX	Counts: [4 13]	Arrangements: 2
+Condition: XSSXSSSSoSSSXX	Counts: [8 1 2]	Arrangements: 2
+Condition: SSSSoSSSSo	Counts: [2 2]	Arrangements: 9
+Condition: XSSXSSSXSSSSSXS	Counts: [4 3 3]	Arrangements: 6
+Condition: XSSSSSXoXSoS	Counts: [2 2 1]	Arrangements: 1
+Condition: XSSSoSSoXoXS	Counts: [3 1 1 1]	Arrangements: 2
+Condition: SSSSSSSXSoSXSSXX	Counts: [2 2 5]	Arrangements: 9
+Condition: SSSXXSoXSSSSSSSXo	Counts: [2 3 4 3]	Arrangements: 1
+Condition: SXSSoSSSoXo	Counts: [3 2 1]	Arrangements: 4
+Condition: XSXXSoSSSSSoXSXSX	Counts: [5 2 1 5]	Arrangements: 3
+Condition: SSSXSSSSXoSSSSSS	Counts: [4 1 1 2 1]	Arrangements: 22
+Condition: XoSoSXXSXSXSSSXS	Counts: [1 11]	Arrangements: 2
+Condition: SoSSoSXSSXXSS	Counts: [1 7]	Arrangements: 6
+Condition: SSSSSXooXSoXXSXSSSSS	Counts: [1 2 1 4 3]	Arrangements: 6
+Condition: XSSSSoSXXSSSSXXSSX	Counts: [1 1 4 5]	Arrangements: 6
+Condition: SXSSSSoSSSXXS	Counts: [3 5]	Arrangements: 4
+Condition: SXSoSSSSSSS	Counts: [3 1 1]	Arrangements: 15
+Condition: oXoSSSXoooXSSo	Counts: [1 3 3]	Arrangements: 1
+Condition: SXSoooSSSXS	Counts: [2 1 1]	Arrangements: 4
+Condition: SSoXSSoSSSooS	Counts: [1 3 1 1]	Arrangements: 8
+Condition: oSSSSSoXSS	Counts: [5 1]	Arrangements: 1
+Condition: XSSSSSXoXXSXSSSSSS	Counts: [2 4 7 1]	Arrangements: 2
+Condition: SoSSSSoSSXSSXSSXSSoo	Counts: [3 1 1 6]	Arrangements: 4
+Condition: SSSSSSSSSSS	Counts: [2 7]	Arrangements: 3
+Condition: SoSSSSooSXSX	Counts: [2 4]	Arrangements: 3
+Condition: SSSSSXooSXSSSSX	Counts: [1 1 1 3 2]	Arrangements: 6
+Condition: SSoXSSSSXXXSSSSSSSXS	Counts: [9 4]	Arrangements: 2
+Condition: SXSSoXXSoSSoSSSSSSS	Counts: [2 3 1 2 2]	Arrangements: 26
+Condition: oXSXXoSXSSX	Counts: [1 2 5]	Arrangements: 1
+Condition: SSXXXSXSXSSSSSSoSXS	Counts: [1 8 2 1 2]	Arrangements: 2
+Condition: SXoXXXSSSXSSSSSSS	Counts: [2 11 1]	Arrangements: 2
+Condition: SoSoSSSSXSSXSX	Counts: [1 1 1 3]	Arrangements: 8
+Condition: SSSSSoSSXSSSXS	Counts: [3 2 2]	Arrangements: 12
+Condition: SXooSSSoSSXXSSSXSS	Counts: [2 2 3 1 1]	Arrangements: 6
+Condition: SSXSXooSXSSSS	Counts: [3 1]	Arrangements: 1
+Condition: SSSSSSSSSoS	Counts: [2 1 1]	Arrangements: 41
+Condition: SSXSXSoSXSo	Counts: [5 2]	Arrangements: 4
+Condition: XSSSSXSSSSSXoSSo	Counts: [8 1 1 1]	Arrangements: 2
+Condition: XSSSXSXSSSoXXooSXo	Counts: [8 2 1]	Arrangements: 1
+Condition: oXoSXSXXSSoSooSSoSXS	Counts: [1 5 1 1 1 3]	Arrangements: 2
+Condition: SSSXSSSSoSSSoX	Counts: [5 1 1 1]	Arrangements: 13
+Condition: SXSSooSSSXo	Counts: [3 3]	Arrangements: 2
+Condition: SSSSXSSSSSXooSSXS	Counts: [1 2 5 1 1]	Arrangements: 2
+Condition: ooSSSSSSSXXSSSS	Counts: [3 5 1]	Arrangements: 10
+Condition: SSXSXXoSSSXSSS	Counts: [5 3]	Arrangements: 3
+Condition: SSXSSSSSSSSSXXSXXSS	Counts: [5 5 2]	Arrangements: 3
+Condition: oXSSSSSSSS	Counts: [7 1]	Arrangements: 1
+Condition: SoSoXoSXSSSSSSSS	Counts: [1 1 1 5 1]	Arrangements: 9
+Condition: SSXXoooSSXSo	Counts: [3 3]	Arrangements: 2
+Condition: oSSSSSSXSSS	Counts: [2 1 1]	Arrangements: 11
+Condition: XSSoSSSSSSoS	Counts: [3 1 1]	Arrangements: 16
+Condition: ooSooSooSSSSSXS	Counts: [1 3]	Arrangements: 9
+Condition: SSXoSSSSSSSXSSS	Counts: [2 1 6 1]	Arrangements: 4
+Condition: SSSXSSoSSo	Counts: [3 1]	Arrangements: 7
+Condition: oXXSSSoooXSSSSXXS	Counts: [5 7]	Arrangements: 1
+Condition: SSXXXSSSSoSSSSSS	Counts: [8 4]	Arrangements: 6
+Condition: SSXXSSooSSoSX	Counts: [6 1 2]	Arrangements: 2
+Condition: SSSSSXoSSX	Counts: [1 1 1]	Arrangements: 5
+Condition: SSXSSSSSoSXSSSSSSS	Counts: [4 1 1 4 2]	Arrangements: 5
+Condition: SSXXSSooSSS	Counts: [6 2]	Arrangements: 2
+Condition: XXSXXSSXSSSSSXSSXoX	Counts: [11 1 2 1]	Arrangements: 1
+Condition: oSXXSXoSXo	Counts: [5 1]	Arrangements: 1
+Condition: SSSSSXSSSSSSXXS	Counts: [1 11]	Arrangements: 5
+Condition: SSSSXSSSSSSSSXXXXS	Counts: [2 1 6]	Arrangements: 20
+Condition: oSoSXSSSSSSSS	Counts: [6 1]	Arrangements: 5
+Condition: SSSXSXSSSSoSSXSS	Counts: [5 1]	Arrangements: 3
+Condition: XSSXoSSSXXSSSSSXS	Counts: [1 1 6 1 3]	Arrangements: 1
+Condition: oSSoSXSSSSSSSX	Counts: [1 4 1 2]	Arrangements: 6
+Condition: SSSSSSXSSSooSSXSXSS	Counts: [4 5]	Arrangements: 12
+Condition: SSSSSoSooSSSSXXSXo	Counts: [2 8]	Arrangements: 4
+Condition: SSSSSoXoSXSS	Counts: [4 1 3]	Arrangements: 4
+Condition: SSSSSXSSSoSSoSSX	Counts: [1 1 2 1 3]	Arrangements: 21
+Condition: SXSSSSSSoSSXSSSXSSS	Counts: [1 1 2 4 4]	Arrangements: 9
+Condition: oSSSXSXSSSo	Counts: [1 1 3]	Arrangements: 2
+Condition: SSSSoSSXXXSSS	Counts: [1 1 3 1]	Arrangements: 14
+Condition: oSXSSSSXSXXSXoS	Counts: [2 5 1]	Arrangements: 2
+Condition: ooSoSSSSoSoSSXSSS	Counts: [1 3]	Arrangements: 19
+Condition: SSSXXSSSSSoo	Counts: [3 1]	Arrangements: 7
+Condition: XXSSSSSSSSSSSXSS	Counts: [8 2 1 1]	Arrangements: 2
+Condition: SSSSXXXSSSSSXXSooS	Counts: [1 1 6 4 1]	Arrangements: 1
+Condition: oSSSSSSSSSXSSXSSXSS	Counts: [10 2 2]	Arrangements: 4
+Condition: SXoSSSSSSS	Counts: [1 1 1]	Arrangements: 15
+Condition: XoSSSSSSSSXX	Counts: [1 1 1 2]	Arrangements: 15
+Condition: SSXSoSSSSSSXoSoSSSS	Counts: [3 2 1 1 1 1]	Arrangements: 66
+Condition: SXSoXSSXSSSSSSoSSSSS	Counts: [2 7 1 4]	Arrangements: 8
+Condition: SXXSSXSSSSXXSXSoXXSS	Counts: [2 3 3 2 4]	Arrangements: 2
+Condition: XooXSoSSXSSXSS	Counts: [1 1 6 1]	Arrangements: 1
+Condition: XoSSSooSSSSSSSS	Counts: [1 1 1 4 3]	Arrangements: 1
+Condition: SXXSSSSoSS	Counts: [2 1 1]	Arrangements: 7
+Condition: oSXSSooXXSSSSooSS	Counts: [2 6 2]	Arrangements: 2
+Condition: ooXSoXXSSSo	Counts: [2 4]	Arrangements: 1
+Condition: XSoSSSXoSS	Counts: [1 2 2]	Arrangements: 1
+Condition: SSSXXSSSSSSoSSo	Counts: [1 5 1 1]	Arrangements: 15
+Condition: SXSSSXSSXoSSSSS	Counts: [9 1]	Arrangements: 5
+Condition: SSSSXoSSSS	Counts: [5 1 1]	Arrangements: 3
+Condition: XSSSSSSoXSSSXSSSX	Counts: [1 2 1 7 1]	Arrangements: 3
+Condition: XSSSSSXXSSXSSSSoSSSS	Counts: [3 8 1 1]	Arrangements: 21
+Condition: SoXSSSSXXSXSSoSooSS	Counts: [1 2 8 1 2]	Arrangements: 1
+Condition: XSSSSSSSoSSXS	Counts: [1 2 4]	Arrangements: 5
+Condition: SSXXXSSoSoS	Counts: [6 1]	Arrangements: 4
+Condition: oSSSSSSXoSSS	Counts: [1 1 1 3]	Arrangements: 6
+Condition: oSSXSSXXXSSSXSooSXoo	Counts: [9 1 1]	Arrangements: 2
+Condition: SoSoSSXXSX	Counts: [1 6]	Arrangements: 2
+Condition: SSSSXSSSSSX	Counts: [1 2 3]	Arrangements: 5
+Condition: SSXXSSSSSSXXSSX	Counts: [11 2]	Arrangements: 1
+Condition: SXSSSSSXSS	Counts: [1 2 1]	Arrangements: 3
+Condition: XoXSSoSSSXoXXSSSSXS	Counts: [1 2 2 1 8]	Arrangements: 1
+Condition: SXoSSXSSSSSS	Counts: [1 3 1 1]	Arrangements: 10
+Condition: ooSSSSSSSoS	Counts: [3 2]	Arrangements: 3
+Condition: XSSoSoSSSSSSSS	Counts: [3 1 1 1]	Arrangements: 41
+Condition: SSXXSSSXSSSX	Counts: [8 1]	Arrangements: 3
+Condition: XSSSSoSXSSXSSSSXoo	Counts: [1 1 1 1 3 1]	Arrangements: 2
+Condition: SXXXXSXSSSoSoS	Counts: [8 1]	Arrangements: 5
+Condition: ooXoSSSXSSoo	Counts: [1 4]	Arrangements: 3
+Condition: oSSoSXSSSSSSXSSSS	Counts: [1 9 2]	Arrangements: 6
+Condition: SXSoSSSSSS	Counts: [3 4]	Arrangements: 3
+Condition: XSSoXSSSSSSSSSS	Counts: [2 2 3 3]	Arrangements: 3
+Condition: SSXSSSSoSSSo	Counts: [5 1 1 1]	Arrangements: 1
+Condition: oSSXSSSXoSSXSo	Counts: [3 1 3]	Arrangements: 6
+Condition: oSXSSXoXSoSXSoX	Counts: [2 1 1 2 1]	Arrangements: 4
+Condition: SSSSSSSSSSoSSSSSo	Counts: [8 2]	Arrangements: 12
+Condition: SoSSSoSSoSS	Counts: [1 1]	Arrangements: 24
+Condition: XSoSSSSSXXooXXXS	Counts: [1 1 4 4]	Arrangements: 2
+Condition: SoXSSoSSSSoXXS	Counts: [2 3 2]	Arrangements: 2
+Condition: SSSSXSSSSS	Counts: [1 2 2]	Arrangements: 12
+Condition: SXXXSoXSSSS	Counts: [4 2]	Arrangements: 2
+Condition: oSoSoSSSSoSoXSS	Counts: [1 1 1 1 3]	Arrangements: 13
+Condition: oSSXSSSoSSSXSSXXSSSo	Counts: [4 5]	Arrangements: 3
+Condition: ooSSXSSXooXXSXo	Counts: [4 2 1]	Arrangements: 1
+Condition: SXXSSSXXSSoSSSSSSoSS	Counts: [8 2 2]	Arrangements: 16
+Condition: XSSXSSSSSXSXo	Counts: [1 5 1 1]	Arrangements: 2
+Condition: SSSoSSSSSXSSo	Counts: [1 1 4]	Arrangements: 22
+Condition: ooSSSXXSSXSSoSS	Counts: [7 1]	Arrangements: 7
+Condition: SSoXoSSSSSoSSSSSSXS	Counts: [1 1 1 2 1 2]	Arrangements: 118
+Condition: SXoXSoXSSSSXXSSXXS	Counts: [2 1 1 1 2 2]	Arrangements: 2
+Condition: SXXSoSooXXSSSS	Counts: [3 1 4]	Arrangements: 2
+Condition: SSSSooSXSSXoS	Counts: [3 5]	Arrangements: 2
+Condition: oXSXXSSSoSXoo	Counts: [6 1]	Arrangements: 1
+Condition: SoSoSSSooXSSSSS	Counts: [1 1 1 2 1]	Arrangements: 23
+Condition: SoXSSSXSSSSXSXSXXX	Counts: [1 12]	Arrangements: 1
+Condition: SSoSXSXooSXSSoSSSS	Counts: [3 3 1]	Arrangements: 8
+Condition: SSSXSXXSXX	Counts: [1 7]	Arrangements: 2
+Condition: XSSSSSSSoXoXooXS	Counts: [6 1 1 1]	Arrangements: 1
+Condition: SSSSSSSSoSSSSXSS	Counts: [2 2 1 1 3]	Arrangements: 34
+Condition: SSSSSoSXSXSXSSSSSXX	Counts: [2 2 5 1 3]	Arrangements: 2
+Condition: SSSSSSXoSSSS	Counts: [1 4 1 1]	Arrangements: 6
+Condition: SSSSSXSSoXXSo	Counts: [1 2 3]	Arrangements: 7
+Condition: SSSSSXSSSoSSSoS	Counts: [1 6 1]	Arrangements: 12
+Condition: SXSSoSSXSSSSXSSXXS	Counts: [3 11]	Arrangements: 4
+Condition: SSXSoXSSXSSSS	Counts: [2 4]	Arrangements: 2
+Condition: ooSSXSSSSoSSS	Counts: [2 1 1 1]	Arrangements: 8
+Condition: SSSSSSXSXSSooS	Counts: [2 3 1]	Arrangements: 11
+Condition: SXSXSSoSSXXXSSSSS	Counts: [4 5 1]	Arrangements: 18
+Condition: SSSXSSXXSXSSoSoSSXS	Counts: [1 1 6 1 1 1]	Arrangements: 4
+Condition: XXSoXoSoXSSXoXS	Counts: [3 1 1 2 1]	Arrangements: 1
+Condition: SXXSSoSoSSSSSXS	Counts: [3 2 3]	Arrangements: 6
+Condition: SXXSXSSSXXSSSXoXSXS	Counts: [12 1 1 1]	Arrangements: 1
+Condition: SSSXSXSoSXSSSo	Counts: [4 3]	Arrangements: 4
+Condition: oSSSSXXSSo	Counts: [2 2]	Arrangements: 2
+Condition: SSXSSSXSSXSSSSSSSSSo	Counts: [1 8 3 1 2]	Arrangements: 1
+Condition: SXSSSSXooo	Counts: [2 3]	Arrangements: 2
+Condition: SSoSSXSSSS	Counts: [1 3 1]	Arrangements: 13
+Condition: SXSoSSSSSSSSXS	Counts: [1 3 1 1]	Arrangements: 6
+Condition: SooSSXSoXoSSSSS	Counts: [4 1 1 2]	Arrangements: 3
+Condition: SSSSSoSSSSXSSSSSoSo	Counts: [5 7 1 1]	Arrangements: 3
+Condition: SSoSXSoSXXSSSXSSXS	Counts: [2 2 8 1]	Arrangements: 2
+Condition: SSSSSoXSSXSSXSSSSSS	Counts: [1 1 2 1 7]	Arrangements: 12
+Condition: SSoSSSSSoXS	Counts: [1 4 1]	Arrangements: 4
+Condition: SXSXSSSooXXSS	Counts: [5 3]	Arrangements: 2
+Condition: SoSoSSSSSSo	Counts: [1 2 1]	Arrangements: 13
+Condition: SXSXoSXSXSSSSSSSoX	Counts: [2 1 7 1 1]	Arrangements: 5
+Condition: SSSSSSSSSSSSSSXSSSS	Counts: [2 1 1 9]	Arrangements: 35
+Condition: XSoSSSoSSo	Counts: [1 1 1]	Arrangements: 7
+Condition: XSoSSSSSXSSoXXSXS	Counts: [1 1 4 5]	Arrangements: 6
+Condition: SoSSSSXSSoS	Counts: [3 1]	Arrangements: 5
+Condition: SSSXSSXXSSSSXXSSoSo	Counts: [1 1 11 1]	Arrangements: 2
+Condition: SSXSSSSSSSSXS	Counts: [1 4 1 1]	Arrangements: 4
+Condition: SSSXoooSoS	Counts: [2 1]	Arrangements: 3
+Condition: SXSSSSXXSSXSSSSo	Counts: [1 1 2 5]	Arrangements: 4
+Condition: SoSoXSSSSSSSoXSoSSo	Counts: [4 2]	Arrangements: 1
+Condition: oSSSoXSXSSSSSXSSSXS	Counts: [1 1 8 3]	Arrangements: 3
+Condition: SoSSoSoSoSSX	Counts: [1 1 1 3]	Arrangements: 7
+Condition: XSooXSoSXS	Counts: [2 1 1]	Arrangements: 1
+Condition: SoSSSSoXSSXS	Counts: [1 1 1 2]	Arrangements: 14
+Condition: SXSSSSSSSS	Counts: [2 2 1]	Arrangements: 16
+Condition: oSSSSSoSSSoSSSSSSoo	Counts: [3 1 1]	Arrangements: 106
+Condition: oSXSoXXSXXo	Counts: [1 5]	Arrangements: 1
+Condition: SSXSSSSoooSXXo	Counts: [6 2]	Arrangements: 2
+Condition: SSooXSSXSSSSSSSSSSo	Counts: [1 14]	Arrangements: 2
+Condition: XSoXSSSSSXXoXSSSoXoS	Counts: [1 8 1 1 1 1]	Arrangements: 2
+Condition: XSSSSXXSSSoSSSSoSS	Counts: [1 1 6 1 1 1]	Arrangements: 6
+Condition: SSSSXoSSSS	Counts: [5 1]	Arrangements: 4
+Condition: SXXSXSSSXXXXSXSS	Counts: [4 1 7]	Arrangements: 1
+Condition: SoSSSSSoSXSSoXS	Counts: [1 4 2 1]	Arrangements: 4
+Condition: SSXSoSSSSSo	Counts: [2 1 1]	Arrangements: 12
+Condition: SSSoSXSSSS	Counts: [1 3]	Arrangements: 7
+Condition: XXSSSSSXSXSoXSSXSX	Counts: [2 1 4 1 1 1]	Arrangements: 5
+Condition: SXSSSSoXSSXXoXSS	Counts: [3 1 5 1]	Arrangements: 3
+Condition: oSXoSXoXSoSS	Counts: [2 1 2 2]	Arrangements: 1
+Condition: SSoSSSSoXS	Counts: [1 2 1]	Arrangements: 7
+Condition: SSooSSSSXoSS	Counts: [2 1 1]	Arrangements: 9
+Condition: SSoSoSXSXoSSSS	Counts: [1 1 3 2]	Arrangements: 6
+Condition: SXSSoSSSSXS	Counts: [3 6]	Arrangements: 2
+Condition: SSSSSXSSSSXXXSS	Counts: [3 4]	Arrangements: 6
+Condition: SXXSSoXSSSSSSSSXSSS	Counts: [4 1 4 1 2 1]	Arrangements: 2
+Condition: SSXXSXSSSSSSSSSSo	Counts: [1 11 2]	Arrangements: 1
+Condition: XSoSSSSSSXSSXSXSSXXS	Counts: [1 15]	Arrangements: 2
+Condition: XSooSSSXXSoXS	Counts: [1 1 2 1]	Arrangements: 2
+Condition: SoSSSSSXSSXSSSoS	Counts: [1 6 1]	Arrangements: 24
+Condition: SXXSSSSSSXSoS	Counts: [6 2]	Arrangements: 4
+Condition: ooSXXXSSooSoSSSSo	Counts: [5 4]	Arrangements: 2
+Condition: SSSXSSooSoXo	Counts: [3 1 1]	Arrangements: 4
+Condition: SSXSSXSSSXXXoSXSS	Counts: [12 2]	Arrangements: 2
+Condition: SoSXooSXoS	Counts: [1 2]	Arrangements: 1
+Condition: XXSSXSSSSSS	Counts: [2 1 1]	Arrangements: 5
+Condition: XSXSoXSSXSoSX	Counts: [4 4 1]	Arrangements: 1
+Condition: SSSXSSXoSS	Counts: [1 2 1]	Arrangements: 5
+Condition: SXSoSSoSSSX	Counts: [2 1 2]	Arrangements: 6
+Condition: SXSSXSSXSSSoSoSXSSS	Counts: [10 2]	Arrangements: 4
+Condition: SSSSSoXXSXSSSS	Counts: [1 2 5 2]	Arrangements: 3
+Condition: SoSoSXSSSSSSXXo	Counts: [1 3 4]	Arrangements: 4
+Condition: oXSSooSSSSXooXoSSS	Counts: [1 2 2 1 1 1]	Arrangements: 1
+Condition: oSooSXSooSSSSS	Counts: [3 1]	Arrangements: 5
+Condition: SSSSSSSSSSoSSo	Counts: [7 2]	Arrangements: 5
+Condition: SSoSXSXXXoSSS	Counts: [1 5 1]	Arrangements: 6
+Condition: oSSSXSSoSSXSSo	Counts: [2 1 5]	Arrangements: 2
+Condition: SXSSSSSSSoSSXS	Counts: [2 2 4]	Arrangements: 9
+Condition: XSXSSSSoSSSXSS	Counts: [5 2]	Arrangements: 2
+Condition: SXSSXSSSSSSSXSoXSS	Counts: [1 1 4 1 1 1]	Arrangements: 2
+Condition: XSXSSXXooSXSSSSXSSo	Counts: [7 1 3]	Arrangements: 3
+Condition: SXXSSSoXSo	Counts: [2 2 1]	Arrangements: 1
+Condition: oSSoSSSSXSSXSSSS	Counts: [1 7 1]	Arrangements: 16
+Condition: SXSoSSXXSooSSS	Counts: [2 4 2]	Arrangements: 8
+Condition: ooSXSSoSSo	Counts: [2 1]	Arrangements: 5
+Condition: SSSSSSSSSSSSSSoSSSo	Counts: [4 2]	Arrangements: 58
+Condition: XoSXSXSSSSXSSSXSoSS	Counts: [1 1 11 1]	Arrangements: 2
+Condition: SSXSSoXSooXSXo	Counts: [1 2 1 3]	Arrangements: 1
+Condition: oSSSSSSXSXSXSSo	Counts: [2 1 1 1 1]	Arrangements: 7
+Condition: SoSSSoSSSXXSSSS	Counts: [2 1 4]	Arrangements: 6
+Condition: SSoSSSSSSoo	Counts: [3 1]	Arrangements: 3
+Condition: oSXSSSSSXSXSSooS	Counts: [1 6]	Arrangements: 3
+Condition: oSXSSSSSSSSSS	Counts: [3 3]	Arrangements: 11
+Condition: oSSooXSSoSSSS	Counts: [1 3 2]	Arrangements: 6
+Condition: SSXSXXXSSXSSo	Counts: [2 8]	Arrangements: 1
+Condition: SoSSXXSSSXSSXSoSS	Counts: [1 5 6 1]	Arrangements: 2
+Condition: SSSSSSSSXSS	Counts: [2 1 4]	Arrangements: 10
+Condition: SSXXXSSSSSS	Counts: [4 2]	Arrangements: 7
+Condition: SoXXXSSSSSXSSSXo	Counts: [3 2 1 3]	Arrangements: 2
+Condition: XSSSSXSSSSS	Counts: [1 4 2]	Arrangements: 6
+Condition: SSSSoooSSSSSSXSSSoSS	Counts: [1 2 1 1 6 1]	Arrangements: 2
+Condition: SSSSSSXSSXSoSoSSSX	Counts: [1 1 7 1 3]	Arrangements: 1
+Condition: SSXoSSXSSS	Counts: [2 5]	Arrangements: 2
+Condition: oSXXSSSXSSSSXXSSSXS	Counts: [4 2 2 2]	Arrangements: 6
+Condition: SXSSXoSSoSSSXSSSSSXS	Counts: [4 1 1 2 1 2]	Arrangements: 22
+Condition: SSoSSSSSSSSSSoS	Counts: [1 1 1 2 1]	Arrangements: 116
+Condition: SSoSSSSXoSSSSXS	Counts: [1 1 6]	Arrangements: 5
+Condition: SSXSSXSSSSSS	Counts: [7 2]	Arrangements: 6
+Condition: SSSoSSSSSSXSSSSSSS	Counts: [3 2 4]	Arrangements: 27
+Condition: XSXSXSXSSSSSoSSSS	Counts: [1 1 8 1 1]	Arrangements: 3
+Condition: SSSSSSSXSSSSSXXSSSSo	Counts: [1 9]	Arrangements: 13
+Condition: SSoSSoSSSXXSSoSSSSoX	Counts: [2 2 5 2 1]	Arrangements: 9
+Condition: SSSXooooXS	Counts: [2 1]	Arrangements: 1
+Condition: SSXXSoSSSSSSXoo	Counts: [1 2 1 1 1]	Arrangements: 6
+Condition: XSSSSSXXSXSSSSXSo	Counts: [5 5 1]	Arrangements: 1
+Condition: SSSoXoSSSSoSSSSSSSS	Counts: [2 1 1 1 3 1]	Arrangements: 92
+Condition: XSSSSoXSSSSoSSSSo	Counts: [1 1 4 4]	Arrangements: 3
+Condition: SSSSSXXXSSSXSSoXS	Counts: [3 4 2 1]	Arrangements: 6
+Condition: SSoSSXSSSSSSS	Counts: [2 1 1]	Arrangements: 23
+Condition: SSSooXSSSX	Counts: [1 1 1]	Arrangements: 4
+Condition: SSSSSSSSSSSSSSSS	Counts: [2 1 1 2 1]	Arrangements: 252
+Condition: SSSXXSSSSSS	Counts: [2 1]	Arrangements: 5
+Condition: SSSSSSXXSSSSXSSSS	Counts: [7 1 1 1]	Arrangements: 13
+Condition: XSXSooSSSXSXXS	Counts: [4 5]	Arrangements: 2
+Condition: XoSSSSXSoSSSSXoSS	Counts: [1 2 1 5]	Arrangements: 2
+Condition: oSSSoSSSSSoooSXSoSS	Counts: [1 2]	Arrangements: 17
+Condition: SXSoSXSSSSSSSSoSSSXX	Counts: [2 4 3 5]	Arrangements: 10
+Condition: oSSXoXSSSSXSXSSSSXSS	Counts: [3 2 9 1]	Arrangements: 1
+Condition: SSXXXXoSSSXSXXSS	Counts: [5 1 2 4]	Arrangements: 1
+Condition: SSSSSSSSSSXSXSXSS	Counts: [1 1 1 2 3]	Arrangements: 20
+Condition: SXSXSSSSSXXXSSSXXoo	Counts: [4 2 8]	Arrangements: 3
+Condition: SSSXSSoSSSSSXSS	Counts: [1 2 1 4]	Arrangements: 21
+Condition: SoSSSXXSSSo	Counts: [1 3 1]	Arrangements: 7
+Condition: SXSXSSSSXSSSXS	Counts: [1 6 4]	Arrangements: 1
+Condition: SoSXSoSSSSSXSSS	Counts: [3 4]	Arrangements: 4
+Condition: SSSXXSSXSXX	Counts: [1 2 4]	Arrangements: 2
+Condition: SXSSSSSSSSSoSS	Counts: [5 1]	Arrangements: 13
+Condition: oSSXXSSSSXSXSSSSSS	Counts: [2 6 1 1]	Arrangements: 10
+Condition: SXSSXSSXXo	Counts: [1 5]	Arrangements: 1
+Condition: SoSSSSoSSXSo	Counts: [1 1 1 1]	Arrangements: 10
+Condition: SSSXSSSoSSXSSSXSSXS	Counts: [4 10]	Arrangements: 8
+Condition: XSSSXSXoSSSSSSSSXS	Counts: [7 1 1 1]	Arrangements: 15
+Condition: XSSSSXSXSS	Counts: [4 3]	Arrangements: 1
+Condition: SSSoSSoSSSSSS	Counts: [1 2 3]	Arrangements: 17
+Condition: SSoXoSSSSSSXXSSS	Counts: [1 1 1 1 6]	Arrangements: 8
+Condition: SSSSSSoSSSS	Counts: [4 1]	Arrangements: 13
+Condition: SoSXSSoXSSo	Counts: [3 1]	Arrangements: 2
+Condition: SoXXSSSXSSSSXSSSSSSS	Counts: [3 1 1 3 2]	Arrangements: 11
+Condition: oSSSSSXSSSSoSSXSoSo	Counts: [3 1 3 1 1 1]	Arrangements: 2
+Condition: SXSSXSSSSSSXS	Counts: [1 3 5]	Arrangements: 3
+Condition: SSSXSoSoSo	Counts: [5 1 1]	Arrangements: 1
+Condition: XXooSSXSSXXSS	Counts: [2 8]	Arrangements: 2
+Condition: SSSSSXSSSSX	Counts: [2 3]	Arrangements: 2
+Condition: SXoSSSXXXSSSSSoo	Counts: [1 7]	Arrangements: 4
+Condition: SXXXSSSXSSXXSSX	Counts: [8 5]	Arrangements: 2
+Condition: SSoSoSXSSSSS	Counts: [1 1 2 2]	Arrangements: 10
+Condition: SXSoSSoSXS	Counts: [3 1]	Arrangements: 1
+Condition: SSSSSSSSoSSSSXSXoSX	Counts: [1 2 1 6 1]	Arrangements: 10
+Condition: SSXXoooSSSSoSSSSXSo	Counts: [3 1 5]	Arrangements: 8
+Condition: SSSSooSSSoSooS	Counts: [3 1 1]	Arrangements: 17
+Condition: oXSSSoXXXSXSS	Counts: [2 3 2]	Arrangements: 1
+Condition: SXXSXSSSSSSoSoooX	Counts: [4 2 1 1 1]	Arrangements: 3
+Condition: SSSXSSSSSXoS	Counts: [1 4]	Arrangements: 1
+Condition: SSoSSXSSooSSSSo	Counts: [1 3 1 4]	Arrangements: 2
+Condition: oXXSooSSoSXSS	Counts: [2 1 3]	Arrangements: 4
+Condition: SSSXXoSoSoSSSSSXSS	Counts: [1 2 1 3 2]	Arrangements: 12
+Condition: SSXSSXSoSSSSSSSSSo	Counts: [5 2 5]	Arrangements: 6
+Condition: XSSSSSSXoSSXSS	Counts: [1 2 1 3]	Arrangements: 10
+Condition: oSSXSSSSSSSS	Counts: [7 2]	Arrangements: 3
+Condition: oXSXSoSSXoS	Counts: [3 2]	Arrangements: 1
+Condition: SSSSXXSXXSSooSSSo	Counts: [9 2]	Arrangements: 6
+Condition: oSSSSoSSSXS	Counts: [3 4]	Arrangements: 4
+Condition: SoSSXSSXXXSXSXSo	Counts: [9 2]	Arrangements: 1
+Condition: SSSXSSSoSS	Counts: [2 1]	Arrangements: 8
+Condition: oSoSSSSSSS	Counts: [1 2 2]	Arrangements: 7
+Condition: SSSSSSSSSSoXS	Counts: [1 5 1]	Arrangements: 10
+Condition: SSSSSXSoSSSXSSoSSS	Counts: [1 4]	Arrangements: 3
+Condition: SSXSSoXXoSS	Counts: [3 2 1]	Arrangements: 6
+Condition: SSSXSSSXSSXSXSSSSS	Counts: [3 2 5 1 1]	Arrangements: 2
+Condition: SXSSSSSSSoo	Counts: [4 2]	Arrangements: 5
+Condition: oSSSSSXSSSSoSXSS	Counts: [5 3]	Arrangements: 10
+Condition: SooSSSSXXSSSSSSSSS	Counts: [6 4]	Arrangements: 15
+Condition: SSSSSXSoSoSSoXSS	Counts: [3 3]	Arrangements: 2
+Condition: SSSXSSSoXSXSoSXSSS	Counts: [1 2 1 1 2 3]	Arrangements: 8
+Condition: XSSSSoSSXSSo	Counts: [4 1 3]	Arrangements: 1
+Condition: SSSXSSSSSSXSSSXXS	Counts: [4 9]	Arrangements: 7
+Condition: SSoSooXSoSSSSoo	Counts: [2 1]	Arrangements: 5
+Condition: XSSXoSSoXSSSSXS	Counts: [1 1 2 7]	Arrangements: 1
+Condition: SSSoSXoSooSoSS	Counts: [2 2 1 2]	Arrangements: 4
+Condition: SoSXSXXSSoXoXSoSXo	Counts: [1 5 1 1 1 2]	Arrangements: 1
+Condition: SXSXSSXXSSSXSSSS	Counts: [11 1]	Arrangements: 3
+Condition: oSSSSooXSSSXXS	Counts: [2 1 1 2]	Arrangements: 4
+Condition: XSSoSSXXSoSoSSXSSXS	Counts: [3 4 1 3 3]	Arrangements: 2
+Condition: XXSSoSXSoXXXS	Counts: [2 2 3]	Arrangements: 2
+Condition: SXSSSSSSSSSSSXXX	Counts: [1 1 1 1 3]	Arrangements: 35
+Condition: oSXSXXSSSXXSSSSSSS	Counts: [4 4 1]	Arrangements: 15
+Condition: SoSSSSSSSSXSSSSS	Counts: [2 2 6]	Arrangements: 10
+Condition: SXSSoSooXXXXXXSX	Counts: [2 1 8]	Arrangements: 3
+Condition: SSSoSSoSSSXXooSSSXS	Counts: [1 2 1 2 1 2]	Arrangements: 18
+Condition: oooXXSSoXSoSS	Counts: [4 1 1]	Arrangements: 2
+Condition: SoXSooSSoS	Counts: [2 2]	Arrangements: 1
+Condition: SXXSSooSXXSSSS	Counts: [4 2 3]	Arrangements: 2
+Condition: SSSXSXSSSSSSoSXSSS	Counts: [8 4]	Arrangements: 8
+Condition: SXoSSSSSXXoSSXS	Counts: [1 2 4 2]	Arrangements: 2
+Condition: SSSXoXSSSXXSoX	Counts: [3 2 2 1]	Arrangements: 1
+Condition: SSSSSSSSSSSSSooSoS	Counts: [1 6]	Arrangements: 21
+Condition: XSSSSSSSoSX	Counts: [4 2 1]	Arrangements: 2
+Condition: SSSSSSSXSSS	Counts: [2 1 3]	Arrangements: 10
+Condition: oSSSoXXXXXXSoS	Counts: [1 6]	Arrangements: 3
+Condition: SSoSSSSSSo	Counts: [2 1 1]	Arrangements: 11
+Condition: SXSSSSoSSSSXSXoSoSSX	Counts: [3 7 3]	Arrangements: 2
+Condition: SSXSSoSSSSS	Counts: [3 2]	Arrangements: 12
+Condition: SSSXSSSSSSSSSSSSSXSS	Counts: [10 6]	Arrangements: 9
+Condition: oSoSSSSoSSSo	Counts: [1 2 1 1]	Arrangements: 7
+Condition: SSoSSSSXoSXSS	Counts: [1 2 1 2]	Arrangements: 8
+Condition: oSoSSSooSX	Counts: [1 1 1]	Arrangements: 4
+Condition: SXSoooSXXSSS	Counts: [2 2]	Arrangements: 2
+Condition: XXSSXXSSXSoSoSSo	Counts: [10 1]	Arrangements: 3
+Condition: SSXSSSSSSSSSSoSoSSS	Counts: [12 1 1]	Arrangements: 8
+Condition: SSSSSXSXSSSXSSSSoSX	Counts: [1 11 1]	Arrangements: 10
+Condition: SoSSSoSoSSS	Counts: [2 3]	Arrangements: 2
+Condition: SSooSXSXSSXSSSXSS	Counts: [1 2 9]	Arrangements: 2
+Condition: oXSSSooSSXX	Counts: [3 1 2]	Arrangements: 1
+Condition: SXXSXSSoSoSSSSSSSSo	Counts: [6 1 1 1 1]	Arrangements: 50
+Condition: SSSSSSXSSSSSXSSoSS	Counts: [1 13 1]	Arrangements: 2
+Condition: XSooSSSSoXSSSXSS	Counts: [2 1 6]	Arrangements: 4
+Condition: oSSSXSSooXS	Counts: [4 2]	Arrangements: 3
+Condition: SSSSooSXSS	Counts: [1 2]	Arrangements: 8
+Condition: oSSXSSSSSSSSoXoSS	Counts: [8 1 1 1]	Arrangements: 6
+Condition: XSSoSSoSXo	Counts: [2 1 2]	Arrangements: 2
+Condition: SSXoSoSSSSSSXXSS	Counts: [1 1 4 3 1]	Arrangements: 2
+Condition: SSoSSoSXSoSSSSSXSS	Counts: [2 1 1 2 3]	Arrangements: 14
+Condition: SXSSSSSSSSXSoSXo	Counts: [10 1]	Arrangements: 1
+Condition: SSoSSSSSSSSS	Counts: [1 5 2]	Arrangements: 6
+Condition: SSSSSoSoSSSXSSSoSoSS	Counts: [2 6]	Arrangements: 8
+Condition: oSXXXXSXSXSSSXSSS	Counts: [8 3 1]	Arrangements: 3
+Condition: SSSSSXXoSXSSSSoSSoS	Counts: [1 4 2 2 1 1]	Arrangements: 12
+Condition: oSSSSSSSSSXSSSSSSXS	Counts: [3 10]	Arrangements: 9
+Condition: oSSoSSSSXX	Counts: [1 2 2]	Arrangements: 4
+Condition: SoXXoSoSSXXSoS	Counts: [2 5]	Arrangements: 1
+Condition: SSSSSXSSSS	Counts: [7 1]	Arrangements: 3
+Condition: oSXoooSoXo	Counts: [1 1 1]	Arrangements: 1
+Condition: oSSSXXoSSSXoSoXXSo	Counts: [5 1 3]	Arrangements: 1
+Condition: SoSSSSSooSooX	Counts: [1 2 1 1]	Arrangements: 10
+Condition: SSXSSSSSSXSS	Counts: [4 4]	Arrangements: 8
+Condition: SSSSSXSSoSo	Counts: [4 1]	Arrangements: 5
+Condition: SSSXSoSXSXSSoS	Counts: [2 1 5 1]	Arrangements: 2
+Condition: SSSSSSoSSSSo	Counts: [1 1 1 2]	Arrangements: 22
+Condition: oSoSSSXoXSSSSSXSS	Counts: [1 3 1 2 3]	Arrangements: 3
+Condition: SSSSXSSSSSSXSSoSSXS	Counts: [12 1]	Arrangements: 3
+Condition: SSoooSooSSSSSSXoSS	Counts: [1 1 6 1]	Arrangements: 4
+Condition: oSoSSoSSSoSXSS	Counts: [1 2 3]	Arrangements: 14
+Condition: SoSSSSXSSSSSXSXXSSS	Counts: [1 13]	Arrangements: 10
+Condition: SoSSSXSXXSSSoXooSSS	Counts: [1 1 1 4 1 1]	Arrangements: 6
+Condition: SoXSXXSSSXSSXoSS	Counts: [1 9 1 1]	Arrangements: 2
+Condition: SSXSoSXSSXoS	Counts: [1 5]	Arrangements: 1
+Condition: SSoXSSSSSooSSSSXSSSS	Counts: [1 1 3 8]	Arrangements: 8
+Condition: SSSXSXSXSSSXSoSSX	Counts: [1 10 2]	Arrangements: 3
+Condition: oSSSSXXSSS	Counts: [1 5]	Arrangements: 6
+Condition: SSSXSSooSoS	Counts: [6 1 1]	Arrangements: 1
+Condition: SoSoSSSSSSSSXSSSS	Counts: [1 1 3 1 5]	Arrangements: 12
+Condition: SSSSSSSSXSooSSSSSS	Counts: [5 2 6]	Arrangements: 5
+Condition: SSSSSSSSSXSSSSXoSX	Counts: [2 5 1 2]	Arrangements: 18
+Condition: oSSSSSSSXSSXSS	Counts: [2 6]	Arrangements: 12
+Condition: XSSooSXXoSS	Counts: [3 2]	Arrangements: 1
+Condition: SSSSSSSSSXSXSSXSXo	Counts: [2 5 4]	Arrangements: 5
+Condition: SXSSoSoSXSSS	Counts: [4 1]	Arrangements: 1
+Condition: XXXSSSSSXXoSoXSXooo	Counts: [10 3]	Arrangements: 1
+Condition: SSSXSXXSoSSSXSXSSSSS	Counts: [2 5 2 1 3]	Arrangements: 3
+Condition: SSXSoSSoSSXoXXSSSXoo	Counts: [4 1 1 1 4 1]	Arrangements: 2
+Condition: SSXSSSoSSSSSSoS	Counts: [3 1 2 1 1]	Arrangements: 24
+Condition: SSXSSSXoSSXXSSSSS	Counts: [1 2 2 7]	Arrangements: 3
+Condition: oSXSSoSSSSXXSSXSoSS	Counts: [3 7]	Arrangements: 4
+Condition: SoSSSoSSSS	Counts: [1 1 3]	Arrangements: 8
+Condition: SSSSSoSSSSSSSSSSSXXX	Counts: [1 1 1 1 1 5]	Arrangements: 166
+Condition: SoSoSSSSSXSooSSXSXS	Counts: [1 1 1 1 1 6]	Arrangements: 3
+Condition: SoXoSoSSSSSXSXSXSXSX	Counts: [1 14]	Arrangements: 1
+Condition: SooXXSSSXSSXSSXSSSSS	Counts: [1 4 12]	Arrangements: 1
+Condition: SSSSSSXSXSo	Counts: [6 1]	Arrangements: 1
+Condition: XSSooSSXXXSSoSSXSSSo	Counts: [3 5 4]	Arrangements: 9
+Condition: SSXXoSXXoSSSSSSoS	Counts: [3 2 1 1]	Arrangements: 16
+Condition: SSXSSSSoSSoSSSSS	Counts: [1 2 1 1 2]	Arrangements: 40
+Condition: XSXSSSSSSSSoSSSSSSS	Counts: [5 2 5]	Arrangements: 12
+Condition: SSSSSSSoSSSSS	Counts: [2 1 1 1]	Arrangements: 86
+Condition: SSSSoSSSSXXXSSSS	Counts: [2 6]	Arrangements: 15
+Condition: XSSXXSXXSSSSoo	Counts: [9 1]	Arrangements: 2
+Condition: XSSXoXXSSS	Counts: [1 1 3]	Arrangements: 1
+Condition: XXXSoSXXSoS	Counts: [3 4 1]	Arrangements: 1
+Condition: SSXSSSXXSXSSSSSX	Counts: [2 11]	Arrangements: 2
+Condition: oSXoSSoSSoS	Counts: [1 2 1]	Arrangements: 4
+Condition: SSSSSSXSSSSoS	Counts: [2 6]	Arrangements: 6
+Condition: SSSXXSXSSSoSXSSXS	Counts: [4 1 4]	Arrangements: 3
+Condition: ooooSSSXSooXXSooSSS	Counts: [5 2 2]	Arrangements: 2
+Condition: SooSooSSSSSoXXSXXXSS	Counts: [1 1 4 6 1]	Arrangements: 2
+Condition: XSSSSSSSSSSS	Counts: [2 1 1 4]	Arrangements: 4
+Condition: SSXSSSSSoSSSSSXSSoS	Counts: [5 2 4]	Arrangements: 12
+Condition: oSSSSSoSSSSS	Counts: [1 1 3]	Arrangements: 23
+Condition: SXSoSSSSSXSSSSXSXSSS	Counts: [3 2 1 5]	Arrangements: 13
+Condition: oSXSSSSSSoS	Counts: [3 1]	Arrangements: 9
+Condition: XSSSoSSoSSoX	Counts: [4 1 1 1]	Arrangements: 4
+Condition: SoXSoSSSSSSSSoSSS	Counts: [1 2 2 1 2]	Arrangements: 42
+Condition: SSoSXSXXSSSSSSoo	Counts: [5 1]	Arrangements: 9
+Condition: SSXXXXSSSSoSXSoSS	Counts: [7 2]	Arrangements: 6
+Condition: oSXXXSSSSSSSSSSXX	Counts: [5 2 1 2]	Arrangements: 16
+Condition: XSSoSSSSSoSSSXS	Counts: [2 2 1 2]	Arrangements: 18
+Condition: SSSSSSSSXSSoSSXS	Counts: [1 1 3 3]	Arrangements: 62
+Condition: oSSSSSSSSSSSSSX	Counts: [3 7]	Arrangements: 4
+Condition: XXXSXSoSSS	Counts: [3 2 1]	Arrangements: 3
+Condition: SXSXXSSooXSXSS	Counts: [5 1 1]	Arrangements: 2
+Condition: oXSoSXoooSSX	Counts: [2 2 3]	Arrangements: 1
+Condition: oXSSSXSSSSSXSSo	Counts: [1 1 6]	Arrangements: 2
+Condition: SSXXSSSSSSSSS	Counts: [5 4]	Arrangements: 9
+Condition: oSSXXSSoSSSSoSS	Counts: [5 1]	Arrangements: 12
+Condition: SSSXSXoXSSXXXSXSoX	Counts: [1 1 1 1 5 1]	Arrangements: 2
+Condition: SSSSSXSSSSS	Counts: [3 1]	Arrangements: 11
+Condition: oSSSSSoSXoS	Counts: [1 1 2]	Arrangements: 6
+Condition: SSSSSSooSoSS	Counts: [1 2 1 1]	Arrangements: 15
+Condition: SSSSXoSSSSSSSSSSSoS	Counts: [1 7]	Arrangements: 5
+Condition: SSXSSSSSSXXSSXo	Counts: [3 2 5]	Arrangements: 6
+Condition: SSSSSSSoSSSXSSoSSSo	Counts: [5 1 1 1 1 2]	Arrangements: 4
+Condition: SXSSSSSXSXXoSSSXSSoS	Counts: [1 5 2 1 4 1]	Arrangements: 1
+Condition: oSSSXooSSSSSSSS	Counts: [4 1 3]	Arrangements: 10
+Condition: SSSSSoSSSo	Counts: [2 1 1]	Arrangements: 13
+Condition: SSXSSoXXSSoS	Counts: [2 2 1 1]	Arrangements: 2
+Condition: oSSXSSSSSSSoooSSXSSS	Counts: [10 1 1 1]	Arrangements: 2
+Condition: oXXSSXSSSSSSSooSSSSo	Counts: [5 2 1]	Arrangements: 27
+Condition: oSXSoSoSSSXS	Counts: [2 3]	Arrangements: 4
+Condition: SSSSSSSoSSSXSS	Counts: [1 2 5]	Arrangements: 20
+Condition: SSSoSSSSSSoSSSSXSSS	Counts: [3 3]	Arrangements: 16
+Condition: SSSSSSSSSSSSSSXoS	Counts: [1 1 1 5 1]	Arrangements: 50
+Condition: SSSSSSSoXSS	Counts: [4 2]	Arrangements: 4
+Condition: XSSSSSXSSSSSSSSoS	Counts: [1 1 8 1]	Arrangements: 10
+Condition: XXXSSXSSSSS	Counts: [6 1]	Arrangements: 4
+Condition: SSSSSSSSSSSXSooSSSX	Counts: [3 5 3]	Arrangements: 9
+Condition: SSXXXXXSSSSSSoSS	Counts: [6 3 1]	Arrangements: 11
+Condition: SoSSSSoSSoSS	Counts: [3 1]	Arrangements: 8
+Condition: oXXSSXSSSSXooSSooo	Counts: [2 7 1]	Arrangements: 2
+Condition: SSXSXSSSSSoXo	Counts: [4 1 1]	Arrangements: 7
+Condition: XSSSSSXXSXSSooSSSS	Counts: [2 1 6 1 2]	Arrangements: 3
+Condition: SSXXXSSSSSSSSS	Counts: [7 1]	Arrangements: 15
+Condition: SSSoSSoXSXoSSSSSS	Counts: [3 2 3 2 2]	Arrangements: 3
+Condition: SXSSSSSXSSSSSS	Counts: [2 8]	Arrangements: 7
+Condition: SSSSSSSXSXS	Counts: [1 2 3]	Arrangements: 6
+Condition: SXSXSSoSXoSSXXSSSS	Counts: [4 1 1 1 5]	Arrangements: 1
+Condition: SSSSSSXSSX	Counts: [1 5]	Arrangements: 4
+Condition: SXSooSSXSSo	Counts: [1 4]	Arrangements: 2
+Condition: SSSSSSSSSSSo	Counts: [4 1]	Arrangements: 21
+Condition: oSXXSXSSSSSSSSXSSoo	Counts: [4 8]	Arrangements: 3
+Condition: SSSoSSSSoooSSSSoo	Counts: [2 2]	Arrangements: 21
+Condition: SSSSSSoXooSSS	Counts: [1 2 1 1]	Arrangements: 19
+Condition: SSSSSSSSSS	Counts: [1 3]	Arrangements: 21
+Condition: SSSXSoSSSSSSoS	Counts: [4 1 1 1]	Arrangements: 28
+Condition: SoSSSSSSSXo	Counts: [1 1 2]	Arrangements: 11
+Condition: SSoSSSSSSoSSSSXSS	Counts: [2 1 1 2 5]	Arrangements: 3
+Condition: oSSSXSSSSSSoXSSo	Counts: [9 2]	Arrangements: 2
+Condition: SXSXSoSSoSSSSo	Counts: [2 2 2]	Arrangements: 4
+Condition: oSoSSSSSoS	Counts: [1 2]	Arrangements: 7
+Condition: XSSSSXSXSSSoSSSoS	Counts: [1 3 1 3]	Arrangements: 3
+Condition: ooXSXXSSSSSSSXSSoSSX	Counts: [6 1 3 1 1 1]	Arrangements: 1
+Condition: SoSooXSSSSSoSSSSSSSo	Counts: [2 5]	Arrangements: 3
+Condition: SoSoSSSoSSSS	Counts: [1 2]	Arrangements: 20
+Condition: SoXSSSoSooSoXSS	Counts: [1 3 1 1 2]	Arrangements: 1
+Condition: SoSSXSSSoSSSSS	Counts: [1 4 1 2]	Arrangements: 16
+Condition: XSSoSSoSSX	Counts: [3 2 1]	Arrangements: 1
+Condition: SSSSXSSSSSSSXS	Counts: [5 3]	Arrangements: 10
+Condition: SXSoSXSSoSSSSSS	Counts: [2 3 4]	Arrangements: 12
+Condition: XXSSSoSSSSSSS	Counts: [5 1 1 1]	Arrangements: 10
+Condition: SSooSXXSSSSSSSSSo	Counts: [5 1]	Arrangements: 11
+Condition: oSSSSSSoXSSXoXXoooX	Counts: [4 1 4 2 1]	Arrangements: 1
+Condition: SoSSSXSSSoSSSo	Counts: [1 4 2]	Arrangements: 15
+Condition: XXSXSSSSSSSoSSSSSXXS	Counts: [6 3 1 4]	Arrangements: 10
+Condition: SSSoSSoXSXS	Counts: [2 1 3]	Arrangements: 4
+Condition: SSSoSoXXooSSSSSS	Counts: [2 1 2 4]	Arrangements: 6
+Condition: XSSSSXSSXXSSoSXS	Counts: [2 1 4 2]	Arrangements: 4
+Condition: XSSSSXSSSSSoSSSoo	Counts: [1 1 2 2 2]	Arrangements: 14
+Condition: SSSXSoSSoSSSSS	Counts: [1 3 5]	Arrangements: 1
+Condition: SSSSSXXSSSSSSSSSSX	Counts: [1 6 1 1 1]	Arrangements: 65
+Condition: SXSXSSSoXSSSSSSSoo	Counts: [4 8]	Arrangements: 2
+Condition: SSSXSSXSSSooSXSo	Counts: [2 5 3]	Arrangements: 2
+Condition: SoSSSXoSoSSSSSSS	Counts: [2 2]	Arrangements: 6
+Condition: oSXSXSSSXSSSXSXSS	Counts: [4 9]	Arrangements: 5
+Condition: oSXSooXSXXSSSSoSSSoo	Counts: [2 4 1 1 1 1]	Arrangements: 2
+Condition: SSSXooSoSS	Counts: [4 1]	Arrangements: 3
+Condition: oXSSoSXSSSXSSoSSSS	Counts: [1 8 2]	Arrangements: 3
+Condition: oSSSSSXSSXXSXSSSS	Counts: [2 2 2 1 1]	Arrangements: 15
+Condition: SSSoSXSoSo	Counts: [2 2]	Arrangements: 4
+Condition: SXXSSXSSoSSoXXSSXSSo	Counts: [6 7]	Arrangements: 2
+Condition: oXoSSSSSSXSSSSSXSX	Counts: [1 1 3 3 5]	Arrangements: 1
+Condition: oSoSSSSSSSSSSSSSXXS	Counts: [1 3 1 7]	Arrangements: 21
+Condition: SSoSSSSSSXSXXSSS	Counts: [1 1 3 3 1]	Arrangements: 7
+Condition: SSSSSoXXSXS	Counts: [1 1 5]	Arrangements: 6
+Condition: oXXoSSXSoSSoSS	Counts: [2 2 1 1]	Arrangements: 8
+Condition: SSXooXSSXSooXSSS	Counts: [3 5 1 1]	Arrangements: 2
+Condition: SSXSSSSSSSSXSSSSSS	Counts: [13 2]	Arrangements: 6
+Condition: SXSSSSooSoSSS	Counts: [2 1 1]	Arrangements: 29
+Condition: SSSSSXSoXSSSSo	Counts: [4 2]	Arrangements: 2
+Condition: oSXXSoSooS	Counts: [4 1]	Arrangements: 2
+Condition: SXXSXSSXSXXSSXSS	Counts: [12 2]	Arrangements: 1
+Condition: XSXXSoSSSSSSSXSXSXS	Counts: [1 2 1 8 2]	Arrangements: 1
+Condition: SoSoXXSoSSSSXSSX	Counts: [1 2 1 1 4]	Arrangements: 2
+Condition: SSSSoSSSXSoS	Counts: [1 1 2]	Arrangements: 18
+Condition: ooSSSSXXSSSSSSSXSSSS	Counts: [7 5]	Arrangements: 19
+Condition: SSSSSSXSSSSSSS	Counts: [1 8 2]	Arrangements: 4
+Condition: SXSSSSSSSSSo	Counts: [1 1 5]	Arrangements: 3
+Condition: SSXSXXSSSSSSSSSSSoS	Counts: [8 1 3]	Arrangements: 19
+Condition: XoSSXXSSSXXXSSo	Counts: [1 10 1]	Arrangements: 1
+Condition: oSSSSXSSXSXSSSoSSSX	Counts: [12 4]	Arrangements: 2
+Condition: SSoSXSSSSXSoSSSoo	Counts: [1 7 1 1]	Arrangements: 4
+Condition: SSSXXXXXSSSSSoXXSS	Counts: [7 1 3]	Arrangements: 9
+Condition: SoSSSSSoXSXSoSo	Counts: [1 5 3 1]	Arrangements: 1
+Condition: ooSSooXXSSSSSo	Counts: [2 2 2]	Arrangements: 3
+Condition: SSSSSSSSSSXS	Counts: [1 1 1 1]	Arrangements: 35
+Condition: XSXSSoSSXXSSXooS	Counts: [4 2 1]	Arrangements: 1
+Condition: XSoSSSSoSSSoS	Counts: [1 4 3 1]	Arrangements: 1
+Condition: SSSSSXSSSSXXSXSXXX	Counts: [1 1 1 1 8]	Arrangements: 6
+Condition: SoSSXXSSoSXoS	Counts: [6 1]	Arrangements: 1
+Condition: XSSSSSSSoSSSSS	Counts: [4 1 3 1]	Arrangements: 3
+Condition: XSSSXSSSXSSooSXooSSS	Counts: [3 1 1 3 2 1]	Arrangements: 3
+Condition: XSSoSSSSSSSXSSSSS	Counts: [3 9]	Arrangements: 5
+Condition: SSXSXXSSSSXSSSSSSoS	Counts: [5 8]	Arrangements: 5
+Condition: XSSSSSSSXSSSoSXSSSXS	Counts: [1 1 5 2 3]	Arrangements: 30
+Condition: oXSSSXSSSSXXXoSSo	Counts: [1 8 1]	Arrangements: 2
+Condition: SXSSSXSXXSXXSSSXXSXS	Counts: [2 12 1]	Arrangements: 2
+Condition: XoSoXSSSXoS	Counts: [1 1 2]	Arrangements: 1
+Condition: SoSSXSXoSSSXSSSSSoSS	Counts: [3 3]	Arrangements: 3
+Condition: SSSXoSSoSSXSSXSSS	Counts: [1 5]	Arrangements: 2
+Condition: SSSSSXSSSS	Counts: [2 3 1]	Arrangements: 10
+Condition: SSSSoSXSSXSSSSSSSSSo	Counts: [2 1 5 2 4]	Arrangements: 4
+Condition: oSSSSSoXSSSXXSXoSoS	Counts: [2 1 6 1 1 1]	Arrangements: 3
+Condition: SooXSoSSoooSXS	Counts: [1 1 1]	Arrangements: 3
+Condition: SXoSSSSSSS	Counts: [1 1 1]	Arrangements: 15
+Condition: SSXXXooSXS	Counts: [4 2]	Arrangements: 2
+Condition: SSSSXXoSXoXSSSSSSSS	Counts: [1 2 1 5 2]	Arrangements: 6
+Condition: XSSoSXXXSXXSSSoSS	Counts: [1 1 6 1 1]	Arrangements: 4
+Condition: SSSXSSSSSoooSSSoSSS	Counts: [4 2]	Arrangements: 22
+Condition: SoSoSSoSSXSSSSoS	Counts: [1 1 5 1]	Arrangements: 24
+Condition: SSXSoSSSSSoSSSSSS	Counts: [2 1 1 1 4]	Arrangements: 18
+Condition: SoSoSSSoSXSXSSSS	Counts: [1 1 2 3 1]	Arrangements: 14
+Condition: SSXXSooSSXSSoSoo	Counts: [2 1 1]	Arrangements: 3
+Condition: oSSoSSoSSSS	Counts: [1 2 2]	Arrangements: 6
+Condition: SXoSSXXSSSSXoSSSS	Counts: [1 3 3 2]	Arrangements: 6
+Condition: SSXSXSSSSSSXSX	Counts: [5 7]	Arrangements: 2
+Condition: SSXoSSXoXSXSSSo	Counts: [2 1 1 6]	Arrangements: 1
+Condition: SSXSSSSoSSo	Counts: [5 1]	Arrangements: 7
+Condition: SSSSXSSoSSSXXSXSXS	Counts: [6 8]	Arrangements: 4
+Condition: XSSSXSSXSS	Counts: [2 1 1]	Arrangements: 1
+Condition: SSoSSSXSSSXS	Counts: [1 5]	Arrangements: 4
+Condition: oXoooSSoSSSSoSX	Counts: [1 2 1 1 1]	Arrangements: 3
+Condition: XXoSSSSXSoXooSXS	Counts: [2 4 1 2]	Arrangements: 4
+Condition: SSSSXSSSXSoSoSXSSS	Counts: [9 1]	Arrangements: 2
+Condition: SXoSSSXSSXSSSSSSXS	Counts: [1 4 1 1 1 1]	Arrangements: 6
+Condition: SSSSSSoSSoSSSSSXooS	Counts: [2 4]	Arrangements: 6
+Condition: SSoSXXXSoSSSXSSXXSSS	Counts: [4 5]	Arrangements: 2
+Condition: SXooXXSSSXSXSS	Counts: [2 10]	Arrangements: 1
+Condition: ooSSSSSSXSoSXXSo	Counts: [1 4 3]	Arrangements: 10
+Condition: SSSSSSSSSS	Counts: [2 5]	Arrangements: 6
+Condition: SSSSoSSSSSSSSSXSXXSo	Counts: [1 1 2 2 2 5]	Arrangements: 3
+Condition: oSSSSSXSoXSSSSSS	Counts: [1 3 4 2]	Arrangements: 5
+Condition: SSoSSSSXSo	Counts: [1 4]	Arrangements: 5
+Condition: SXSXooXoXSSXXSSSSS	Counts: [3 1 6 1]	Arrangements: 3
+Condition: SooSoSSoSSSSSSS	Counts: [1 2 6]	Arrangements: 4
+Condition: oXSSXSXSSSSSXX	Counts: [2 3 6]	Arrangements: 1
+Condition: SXSooSSSoooSSSXXoS	Counts: [1 3 5 1]	Arrangements: 1
+Condition: SXXXSSSSSSXXSXSooSSS	Counts: [3 3 6 2]	Arrangements: 2
+Condition: SSSSSXoSXSSSo	Counts: [1 2 1 4]	Arrangements: 2
+Condition: SSSSSSSoSSXSSSS	Counts: [1 1 1 5]	Arrangements: 45
+Condition: oSSSoSSooSXSSSoSS	Counts: [2 3]	Arrangements: 6
+Condition: XoSSoXSSSSSooSSSX	Counts: [1 1 3 1 4]	Arrangements: 4
+Condition: SoSSoSSSSSSSSSo	Counts: [1 1 2 6]	Arrangements: 2
+Condition: SXoXSSSooSoSXSS	Counts: [2 1 1 1 2]	Arrangements: 4
+Condition: SSSSSSSSXSSoSSXSSSSS	Counts: [1 1 4 1 6]	Arrangements: 28
+Condition: oXSSSSXSXoS	Counts: [3 1 1]	Arrangements: 1
+Condition: SXSSXoSSSSoXSoo	Counts: [1 1 2 1 1]	Arrangements: 1
+Condition: SSSSSXXSSoSSSSSS	Counts: [2 6 1 2]	Arrangements: 6
+Condition: XoSSoSSSoSSSSSSSo	Counts: [1 2 1 1 4]	Arrangements: 13
+Condition: SSXXSXSXSSooSSS	Counts: [7 3]	Arrangements: 2
+Condition: SXSSSoSSoSo	Counts: [4 2 1]	Arrangements: 2
+Condition: SSSSSXSSSSSoX	Counts: [5 1 1]	Arrangements: 10
+Condition: SXSoSSXSoSXS	Counts: [1 3 3]	Arrangements: 2
+Condition: SoSSoSSSXSXSSSo	Counts: [1 5]	Arrangements: 12
+Condition: SSXXoSXSSSoSSSoXo	Counts: [3 4 2 1]	Arrangements: 4
+Condition: oSSSooSSoSSo	Counts: [3 1 1]	Arrangements: 4
+Condition: XSooSoSSXSoS	Counts: [2 3 1]	Arrangements: 2
+Condition: XXSSSXoSXSoXSS	Counts: [6 1 2]	Arrangements: 1
+Condition: SXoSSoSXoS	Counts: [2 1 1]	Arrangements: 3
+Condition: SSSSSSSSSSSS	Counts: [1 1 1 1]	Arrangements: 126
+Condition: SooXSSSXSSXSXSoSX	Counts: [1 2 3 4 1]	Arrangements: 1
+Condition: SXXSXSSSSSSSSSSXXo	Counts: [11 3]	Arrangements: 2
+Condition: XSXSSooSoXSSSSSXSSSX	Counts: [1 1 1 1 11]	Arrangements: 1
+Condition: SSoSXXSXSSoSSXSSSS	Counts: [1 6 5 1]	Arrangements: 4
+Condition: SSoSXSXooSoSo	Counts: [4 1]	Arrangements: 2
+Condition: XXSooSSSSoSXoSXS	Counts: [3 1 2 2 2]	Arrangements: 2
+Condition: SSSXoSSSXS	Counts: [1 1 2]	Arrangements: 7
+Condition: SSXSSSSSXSXSXSSSXS	Counts: [13 1]	Arrangements: 3
+Condition: SSXSoooSSoXSoSXSS	Counts: [1 2 1 2]	Arrangements: 4
+Condition: SoSSoSSSSXoSSSSoSSo	Counts: [1 1 1 1 4 1]	Arrangements: 18
+Condition: SSoSSSSSoXS	Counts: [1 5 1]	Arrangements: 2
+Condition: SSoXSSSSSXoo	Counts: [1 4 1]	Arrangements: 2
+Condition: SooXSSSSSSoSS	Counts: [2 1]	Arrangements: 6
+Condition: SSXSSSXSoXSS	Counts: [6 2]	Arrangements: 2
+Condition: SSSSSSSXSoXSS	Counts: [3 1 2 3]	Arrangements: 4
+Condition: SXSXSSXXoSXSSSXSSS	Counts: [8 1 5]	Arrangements: 2
+Condition: SSXXSSSSSoSSSSS	Counts: [5 1 1 1]	Arrangements: 44
+Condition: SSSooSSoSXXo	Counts: [1 1 1 3]	Arrangements: 2
+Condition: SoSXSooXoSXS	Counts: [3 1 3]	Arrangements: 1
+Condition: oSSSSSSSXSSXS	Counts: [7 1]	Arrangements: 2
+Condition: oXoSSSSXSXSXSo	Counts: [1 3 3 2]	Arrangements: 1
+Condition: SSXoXooSSSSSSSSXSSXo	Counts: [3 1 8 1]	Arrangements: 2
+Condition: XSSSSSSXoSSS	Counts: [1 1 1 1]	Arrangements: 16
+Condition: SXSSSSSXSSSS	Counts: [2 1 1 1]	Arrangements: 18
+Condition: XSSSSSXSSXSSXoSXSSS	Counts: [1 7 1 1 1]	Arrangements: 4
+Condition: SSSXoSSSoSSSoSS	Counts: [3 2 1 2]	Arrangements: 6
+Condition: SSXSoSSSXXXXXSXXSS	Counts: [1 1 1 10]	Arrangements: 3
+Condition: SSXSSSSSoXSSS	Counts: [6 1 2]	Arrangements: 4
+Condition: SSSSXSSSSXSoSS	Counts: [2 4 2]	Arrangements: 7
+Condition: SSSSSSSSXS	Counts: [1 1 5]	Arrangements: 4
+Condition: SSSXSSSoSXoSS	Counts: [4 2 1]	Arrangements: 9
+Condition: SXSSooSSSXSXSSSSSSXS	Counts: [4 1 5 4]	Arrangements: 6
+Condition: SXSoSXSXSSSXXSXS	Counts: [1 4 4 1]	Arrangements: 1
+Condition: SSSXoSoXSSSSSX	Counts: [3 1 1 1]	Arrangements: 4
+Condition: SSSoSXSoSSSSS	Counts: [2 1 5]	Arrangements: 2
+Condition: oSSSSSXSXSSXXoSSSSSS	Counts: [9 3]	Arrangements: 4
+Condition: SSXSSSXoSSSS	Counts: [7 1]	Arrangements: 4
+Condition: SSSSXSXXXXoSXS	Counts: [6 2]	Arrangements: 2
+Condition: SoSSSSSSSSSXSSoX	Counts: [1 1 2 6 1]	Arrangements: 4
+Condition: SSSSSoSoSSSXSSSS	Counts: [4 1 4 2]	Arrangements: 6
+Condition: XSoSoSSXSXSSS	Counts: [1 1 3 1]	Arrangements: 5
+Condition: SSXSoSSSSSXSSS	Counts: [4 1 5]	Arrangements: 6
+Condition: SoSSSSSoXXooSSS	Counts: [1 2 1]	Arrangements: 18
+Condition: SSSXXXSXSSoSSSoS	Counts: [7 1]	Arrangements: 13

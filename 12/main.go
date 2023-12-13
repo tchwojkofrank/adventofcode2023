@@ -34,7 +34,7 @@ func main() {
 	end := time.Now()
 	fmt.Printf("Running time: %v\n", end.Sub(start))
 	start = time.Now()
-	run2(text)
+	// run2(text)
 	end = time.Now()
 	fmt.Printf("Running time: %v\n", end.Sub(start))
 }
@@ -109,6 +109,7 @@ func run(input string) string {
 		pattern := regexp.MustCompile(patternString)
 		arrangementCount := countArrangements(conditionString, pattern)
 		totalArrangements += arrangementCount
+		fmt.Printf("Condition: %v\tCounts: %v\tArrangements: %v\n", conditionString, contiguousCounts, arrangementCount)
 	}
 	fmt.Printf("Total arrangements: %d\n", totalArrangements)
 	return fmt.Sprintf("%d", totalArrangements)

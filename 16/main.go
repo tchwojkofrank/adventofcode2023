@@ -169,23 +169,13 @@ func run(input string) string {
 	vectorsToTrace[0] = newVector
 
 	traceBeams(grid, vectorsToTrace, &energizedPoints, width, height)
-	//count eneregized points
+	//count energized points
 	count := 0
 	for _, v := range energizedPoints {
 		if v {
 			count++
 		}
 	}
-	// for y := 0; y < height; y++ {
-	// 	for x := 0; x < width; x++ {
-	// 		if energizedPoints[Point{x, y}] {
-	// 			fmt.Printf("#")
-	// 		} else {
-	// 			fmt.Printf("%c", grid[Point{x, y}])
-	// 		}
-	// 	}
-	// 	fmt.Printf("\n")
-	// }
 
 	fmt.Printf("Energized points: %d\n", count)
 

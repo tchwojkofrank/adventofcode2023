@@ -192,6 +192,51 @@ func run(input string) string {
 	return fmt.Sprintf("%d", count)
 }
 
+func getEnergy(grid map[Point]rune, width int, height int, startV Vector) int {
+	newVector := startV
+	energizedPoints := make(map[Point]bool)
+	vectorsToTrace := make([]Vector, 1)
+	vectorsToTrace[0] = newVector
+
+	traceBeams(grid, vectorsToTrace, &energizedPoints, width, height)
+	//count eneregized points
+	count := 0
+	for _, v := range energizedPoints {
+		if v {
+			count++
+		}
+	}
+	return count
+}
+
 func run2(input string) string {
-	return ""
+	grid, width, height := mapInput(input)
+
+	maxEnergy := 0
+	// check all top and bottom row possibilities
+	for x := 0; x < width; x++ {
+		energy := getEnergy(grid, width, height, Vector{Point{x, 0}, Direction{0, 1}})
+		if energy > maxEnergy {
+			maxEnergy = energy
+		}
+		energy = getEnergy(grid, width, height, Vector{Point{x, height - 1}, Direction{0, -1}})
+		if energy > maxEnergy {
+			maxEnergy = energy
+		}
+	}
+
+	// check all left and right column possibilities
+	for y := 0; y < height; y++ {
+		energy := getEnergy(grid, width, height, Vector{Point{0, y}, Direction{1, 0}})
+		if energy > maxEnergy {
+			maxEnergy = energy
+		}
+		energy = getEnergy(grid, width, height, Vector{Point{width - 1, y}, Direction{-1, 0}})
+		if energy > maxEnergy {
+			maxEnergy = energy
+		}
+	}
+	fmt.Printf("Maximum Energized points: %d\n", maxEnergy)
+
+	return fmt.Sprintf("%d", maxEnergy)
 }

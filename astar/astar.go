@@ -1,8 +1,11 @@
 package astar
 
 import (
+	"fmt"
 	"math"
 	"sort"
+
+	"chwojkofrank.com/cursor"
 )
 
 // We can run the A* algorithm on a graph of nodes, if:
@@ -11,10 +14,10 @@ import (
 // 3. get the cost (or weight) of the edges
 // 4. have a heuristic function to guess at the cost to a target node
 type Node interface {
-	name() string
-	neighbors() []Node
-	cost(string) int
-	heuristic(target string) int
+	Name() string
+	Neighbors() []Node
+	Cost(string) int
+	Heuristic(target string) int
 }
 
 type Graph struct {
@@ -25,7 +28,7 @@ type Graph struct {
 func getPath(prev map[string]Node, current Node) []Node {
 	path := make([]Node, 1)
 	path[0] = current
-	for p, ok := prev[(current).name()]; ok; p, ok = prev[(current).name()] {
+	for p, ok := prev[(current).Name()]; ok; p, ok = prev[(current).Name()] {
 		current = p
 		path = append([]Node{current}, path...)
 	}
@@ -38,7 +41,7 @@ type NodeScore struct {
 }
 
 // astar finds a path from start to send.
-func astar(start Node, end Node) []Node {
+func Astar(start Node, end Node) []Node {
 	// The set of nodes we have visisted, and want to expand from
 	seenNodes := make([]Node, 1)
 	seenNodes[0] = start
@@ -48,42 +51,45 @@ func astar(start Node, end Node) []Node {
 
 	// The cheapest score found so far for a node, given its name
 	cheapestScore := make(map[string]int)
-	cheapestScore[(start).name()] = 0
+	cheapestScore[(start).Name()] = 0
 
 	// The current best guess for a score from the start node to the node with the given name
 	guessScore := make(map[string]int)
-	guessScore[(start).name()] = (start).heuristic((start).name())
+	guessScore[(start).Name()] = (start).Heuristic((start).Name())
 
 	// while we have nodes to expand
 	for len(seenNodes) > 0 {
 
 		// Keep seenNodes sorted by lowest score, pick the first one
 		current := seenNodes[0]
+		cursor.Clear()
+		cursor.Position(0, 0)
+		fmt.Printf("Seen Nodes: %4d\n", len(seenNodes))
 
 		// if we found the path, stop
-		if (current).name() == (end).name() {
+		if (current).Name() == (end).Name() {
 			return getPath(prev, current)
 		}
 
 		// we're expanding from this node, so remove it from the list
 		seenNodes = seenNodes[1:]
 
-		neighbors := current.neighbors()
+		neighbors := current.Neighbors()
 		for _, n := range neighbors {
 
 			// Our guess is the best score we have plus the cost of traversing the edge
-			guess := cheapestScore[current.name()] + current.cost((n).name())
+			guess := cheapestScore[current.Name()] + current.Cost((n).Name())
 
 			// If we found a better guess
-			cScore, ok := cheapestScore[n.name()]
+			cScore, ok := cheapestScore[n.Name()]
 			if !ok || guess < cScore {
-				prev[n.name()] = current
-				cheapestScore[n.name()] = guess
-				guessScore[n.name()] = guess + (start).heuristic(end.name())
+				prev[n.Name()] = current
+				cheapestScore[n.Name()] = guess
+				guessScore[n.Name()] = guess + (start).Heuristic(end.Name())
 
 				found := false
 				for i := 0; i < len(seenNodes) && !found; i++ {
-					if (seenNodes[i]).name() == (n).name() {
+					if (seenNodes[i]).Name() == (n).Name() {
 						found = true
 					}
 				}
@@ -93,11 +99,11 @@ func astar(start Node, end Node) []Node {
 					seenNodes = append(seenNodes, n)
 					// sort the list by our best guess
 					sort.Slice(seenNodes, func(i, j int) bool {
-						iScore, iOK := guessScore[(seenNodes[i]).name()]
+						iScore, iOK := guessScore[(seenNodes[i]).Name()]
 						if !iOK {
 							iScore = math.MaxInt / 2
 						}
-						jScore, jOK := guessScore[(seenNodes[j]).name()]
+						jScore, jOK := guessScore[(seenNodes[j]).Name()]
 						if !jOK {
 							jScore = math.MaxInt / 2
 						}

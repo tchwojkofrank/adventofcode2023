@@ -6,6 +6,8 @@ import (
 	"os"
 	"strings"
 	"time"
+
+	"chwojkofrank.com/cursor"
 )
 
 func readInput(fname string) string {
@@ -135,33 +137,118 @@ func nextVector(v Vector, r rune) (Vector, *Vector) {
 	}
 }
 
+const (
+	Up    = 1
+	Left  = 2
+	Down  = 4
+	Right = 8
+)
+
+func vectorToDirection(v Vector) int {
+	if v.d.dx == 0 {
+		if v.d.dy == 1 {
+			return Down
+		} else {
+			return Up
+		}
+	} else {
+		if v.d.dx == 1 {
+			return Right
+		} else {
+			return Left
+		}
+	}
+}
+
+func directionToRune(d int) rune {
+	switch d {
+	case 1:
+		return '╹'
+	case 2:
+		return '╸'
+	case 3:
+		return '┛'
+	case 4:
+		return '╻'
+	case 5:
+		return '┃'
+	case 6:
+		return '┓'
+	case 7:
+		return '┫'
+	case 8:
+		return '╺'
+	case 9:
+		return '┗'
+	case 10:
+		return '━'
+	case 11:
+		return '┻'
+	case 12:
+		return '┏'
+	case 13:
+		return '┣'
+	case 14:
+		return '┳'
+	case 15:
+		return '╋'
+	default:
+		return '.'
+	}
+}
+
+func printVector(v Vector, mappedPoints map[Point]int) {
+	cursor.Position(v.p.x+5, v.p.y+5)
+	fmt.Printf("%c", directionToRune(mappedPoints[v.p]))
+}
+
+func clearBoard() {
+	cursor.Position(0, 0)
+	cursor.Clear()
+}
+
 func traceBeams(grid map[Point]rune, vectorsToTrace []Vector, energizedPoints *map[Point]bool, width int, height int) {
 	vector := vectorsToTrace[0]
 	mappedVectors := make(map[Vector]struct{})
+	mappedPoints := make(map[Point]int)
 	(*energizedPoints)[vector.p] = true
 	mappedVectors[vector] = struct{}{}
+	mappedPoints[vector.p] = Left
 	for len(vectorsToTrace) > 0 {
 		newVector, newTee := nextVector(vector, grid[vector.p])
 		if newTee != nil {
 			if _, ok := mappedVectors[*newTee]; !ok {
 				vectorsToTrace = append(vectorsToTrace, *newTee)
+				mappedPoints[newTee.p] = vectorToDirection(*newTee)
+				printVector(*newTee, mappedPoints)
+			} else {
+				mappedPoints[newTee.p] |= vectorToDirection(*newTee)
+				printVector(*newTee, mappedPoints)
 			}
 		}
 		_, mapped := mappedVectors[newVector]
 		if newVector.p.x >= 0 && newVector.p.y >= 0 && newVector.p.x < width && newVector.p.y < height && !mapped {
 			(*energizedPoints)[newVector.p] = true
 			mappedVectors[newVector] = struct{}{}
+			mappedPoints[newVector.p] = vectorToDirection(newVector)
+			printVector(newVector, mappedPoints)
 			vector = newVector
 		} else {
 			vectorsToTrace = vectorsToTrace[1:]
 			if len(vectorsToTrace) > 0 {
 				vector = vectorsToTrace[0]
 			}
+			if !(newVector.p.x >= 0 && newVector.p.y >= 0 && newVector.p.x < width && newVector.p.y < height) && mapped {
+				mappedPoints[newVector.p] |= vectorToDirection(newVector)
+				printVector(newVector, mappedPoints)
+			}
 		}
 	}
 }
 
 func run(input string) string {
+
+	clearBoard()
 	grid, width, height := mapInput(input)
 	newVector := Vector{Point{0, 0}, Direction{1, 0}}
 	energizedPoints := make(map[Point]bool)

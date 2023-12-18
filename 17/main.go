@@ -9,6 +9,8 @@ import (
 	"time"
 
 	"chwojkofrank.com/astar"
+	"chwojkofrank.com/cursor"
+	"chwojkofrank.com/dijkstra"
 )
 
 func readInput(fname string) string {
@@ -41,18 +43,19 @@ func main() {
 }
 
 const (
-	None = iota
-	Up
-	Right
-	Down
-	Left
-	Any
+	None  = 0
+	Up    = 1
+	Right = 2
+	Down  = 3
+	Left  = 4
+	Any   = 5
 )
 
 type Point struct {
-	x    int
-	y    int
-	prev [3]int
+	x             int
+	y             int
+	lastDirection int
+	count         int
 }
 
 var maxWidth int
@@ -60,58 +63,154 @@ var maxHeight int
 var cityMap [][]int
 var minHeatLoss int
 
+func (p Point) DNeighbors() ([]dijkstra.Node, []int) {
+	neighbors := make([]dijkstra.Node, 0, 4)
+	newDirection := None
+	newCount := 0
+	costs := make([]int, 0, 4)
+	// check Up
+	if p.y > 0 && p.lastDirection != Down &&
+		(p.lastDirection != Up || p.count < 3) {
+		newDirection = Up
+		newCount = 1
+		if p.lastDirection == Up {
+			newCount = p.count + 1
+		}
+		neighbors = append(neighbors, dijkstra.Node(Point{p.x, p.y - 1, newDirection, newCount}))
+		costs = append(costs, cityMap[p.y-1][p.x])
+	}
+	// check Down
+	if p.y < maxHeight-1 && p.lastDirection != Up &&
+		(p.lastDirection != Down || p.count < 3) {
+		newDirection = Down
+		newCount = 1
+		if p.lastDirection == Down {
+			newCount = p.count + 1
+		}
+		// check if we are at the end
+		if p.x == maxWidth-1 && p.y == maxHeight-2 {
+			neighbors = append(neighbors, dijkstra.Node(Point{p.x, p.y - 1, Any, 0}))
+		} else {
+			neighbors = append(neighbors, dijkstra.Node(Point{p.x, p.y + 1, newDirection, newCount}))
+		}
+		costs = append(costs, cityMap[p.y+1][p.x])
+	}
+	// check Left
+	if p.x > 0 && p.lastDirection != Right &&
+		(p.lastDirection != Left || p.count < 3) {
+		newDirection = Left
+		newCount = 1
+		if p.lastDirection == Left {
+			newCount = p.count + 1
+		}
+		neighbors = append(neighbors, dijkstra.Node(Point{p.x - 1, p.y, newDirection, newCount}))
+		costs = append(costs, cityMap[p.y][p.x-1])
+	}
+	// check Right
+	if p.x < maxWidth-1 && p.lastDirection != Left &&
+		(p.lastDirection != Right || p.count < 3) {
+		newDirection = Right
+		newCount = 1
+		if p.lastDirection == Right {
+			newCount = p.count + 1
+		}
+		// check if we are at the end
+		if p.x == maxWidth-2 && p.y == maxHeight-1 {
+			neighbors = append(neighbors, dijkstra.Node(Point{p.x + 1, p.y, Any, 0}))
+		} else {
+			neighbors = append(neighbors, dijkstra.Node(Point{p.x + 1, p.y, newDirection, newCount}))
+		}
+		costs = append(costs, cityMap[p.y][p.x+1])
+	}
+
+	return neighbors, costs
+}
+
 func (p Point) Neighbors() []astar.Node {
 	neighbors := make([]astar.Node, 0, 4)
+	newDirection := None
+	var newCount int
 
-	anyPrev := [3]int{Any, Any, Any}
+	// constraints:
+	// 1. we can't go back the way we came
+	// 2. we can't go straight more than 3 times in a row
+	// 3. we can't go off the edge of the map
 
-	prev := [3]int{p.prev[1], p.prev[2], None}
-	if p.x > 0 && p.prev[2] != Right &&
-		(p.prev[0] != Left || p.prev[1] != Left || p.prev[2] != Left) {
-		prev[2] = Left
-		neighbors = append(neighbors, astar.Node(Point{p.x - 1, p.y, prev}))
+	// We can go left if:
+	// 1. we are not on the left edge
+	// 2. we haven't gone right last
+	// 3. we haven't gone left 3 times in a row
+	if p.x > 0 &&
+		p.lastDirection != Right &&
+		(p.lastDirection != Left || p.count < 3) {
+		newDirection = Left
+		if p.lastDirection == Left {
+			newCount = p.count + 1
+		} else {
+			newCount = 1
+		}
+		// add the Left neighbor with the new count
+		neighbors = append(neighbors, astar.Node(Point{p.x - 1, p.y, newDirection, newCount}))
 	}
-	if p.x < maxWidth-1 && p.prev[2] != Left &&
-		(p.prev[0] != Right || p.prev[1] != Right || p.prev[2] != Right) {
-		prev[2] = Right
+
+	// We can go right if:
+	// 1. we are not on the right edge
+	// 2. we haven't gone left last
+	// 3. we haven't gone right 3 times in a row
+	if p.x < maxWidth-1 &&
+		p.lastDirection != Left &&
+		(p.lastDirection != Right || p.count < 3) {
+		newDirection = Right
+		if p.lastDirection == Right {
+			newCount = p.count + 1
+		} else {
+			newCount = 1
+		}
+		// check if we're adding the end node
 		if p.x == maxWidth-2 && p.y == maxHeight-1 {
-			neighbors = append(neighbors, astar.Node(Point{p.x + 1, p.y, anyPrev}))
+			// if this is the end node, then we don't need to keep track of the direction or count
+			neighbors = append(neighbors, astar.Node(Point{p.x + 1, p.y, Any, 0}))
 		} else {
-			neighbors = append(neighbors, astar.Node(Point{p.x + 1, p.y, prev}))
+			neighbors = append(neighbors, astar.Node(Point{p.x + 1, p.y, newDirection, newCount}))
 		}
 	}
-	if p.y > 0 && p.prev[2] != Down &&
-		(p.prev[0] != Up || p.prev[1] != Up || p.prev[2] != Up) {
-		prev[2] = Up
+
+	// We can go up if:
+	// 1. we are not on the top edge
+	// 2. we haven't gone down last
+	// 3. we haven't gone up 3 times in a row
+	if p.y > 0 &&
+		p.lastDirection != Down &&
+		(p.lastDirection != Up || p.count < 3) {
+		newDirection = Up
+		if p.lastDirection == Up {
+			newCount = p.count + 1
+		} else {
+			newCount = 1
+		}
+		neighbors = append(neighbors, astar.Node(Point{p.x, p.y - 1, newDirection, newCount}))
+	}
+
+	// We can go down if:
+	// 1. we are not on the bottom edge
+	// 2. we haven't gone up last
+	// 3. we haven't gone down 3 times in a row
+	if p.y < maxHeight-1 && p.lastDirection != Up &&
+		(p.lastDirection != Down || p.count < 3) {
+		newDirection = Down
+		if p.lastDirection == Down {
+			newCount = p.count + 1
+		} else {
+			newCount = 1
+		}
 		if p.x == maxWidth-1 && p.y == maxHeight-2 {
-			neighbors = append(neighbors, astar.Node(Point{p.x, p.y - 1, anyPrev}))
+			neighbors = append(neighbors, astar.Node(Point{p.x, p.y + 1, Any, 0}))
 		} else {
-			neighbors = append(neighbors, astar.Node(Point{p.x, p.y - 1, prev}))
+			neighbors = append(neighbors, astar.Node(Point{p.x, p.y + 1, newDirection, newCount}))
 		}
-	}
-	if p.y < maxHeight-1 && p.prev[2] != Up &&
-		(p.prev[0] != Down || p.prev[1] != Down || p.prev[2] != Down) {
-		prev[2] = Down
-		neighbors = append(neighbors, astar.Node(Point{p.x, p.y + 1, prev}))
 	}
 
 	return neighbors
-}
-
-func (p Point) getDirection(to Point) int {
-	if p.x == to.x {
-		if p.y > to.y {
-			return Up
-		} else {
-			return Down
-		}
-	} else {
-		if p.x > to.x {
-			return Left
-		} else {
-			return Right
-		}
-	}
 }
 
 func abs(x int) int {
@@ -142,7 +241,7 @@ func (p Point) Heuristic(toName string) int {
 }
 
 func (p Point) Name() string {
-	return fmt.Sprintf("%d,%d-%d%d%d", p.x, p.y, p.prev[0], p.prev[1], p.prev[2])
+	return fmt.Sprintf("%d,%d-%d%d", p.x, p.y, p.lastDirection, p.count)
 }
 
 func getCityMap(city []string) {
@@ -168,19 +267,150 @@ func (p Point) String() string {
 func run(input string) string {
 	city := strings.Split(input, "\n")
 	getCityMap(city)
-	startBlock := Point{0, 0, [3]int{None, None, None}}
-	endBlock := Point{maxWidth - 1, maxHeight - 1, [3]int{Any, Any, Any}}
+	startBlock := Point{0, 0, None, 0}
+	endBlock := Point{maxWidth - 1, maxHeight - 1, Any, 0}
 	path := astar.Astar(startBlock, endBlock)
-	fmt.Printf("Path:\n%v\n", path)
 	totalCost := 0
 	for i := 1; i < len(path); i++ {
 		point := path[i].(Point)
 		totalCost += cityMap[point.y][point.x]
+		fmt.Printf("%v\t%6d\n", point, totalCost)
 	}
-	fmt.Printf("Total cost: %d\n", totalCost)
+
+	fmt.Printf("A* Total cost: %d\n", totalCost)
+
 	return fmt.Sprintf("%d", totalCost)
 }
 
+type Point2 Point
+
+func (p Point2) Name() string {
+	return Point(p).Name()
+}
+
+func (p Point2) Neighbors() []astar.Node {
+	neighbors := make([]astar.Node, 0, 4)
+	newDirection := None
+	var newCount int
+
+	// constraints:
+	// 1. we can't go back the way we came
+	// 2. we must go straight at least 4 times
+	// 2A. we must turn after 10 straight moves
+	// 3. we can't go off the edge of the map
+
+	// We can go left if:
+	// 1. we are not on the left edge
+	// 2. we haven't gone right last
+	// 3. we weren't going left but we have gone straight 4 times in a row
+	// 4. we haven't gone left 10 times in a row
+	if p.x > 0 &&
+		p.lastDirection != Right &&
+		((p.lastDirection == Left && p.count < 10) ||
+			(p.lastDirection != Left && p.count >= 4)) {
+		newDirection = Left
+		if p.lastDirection == Left {
+			newCount = p.count + 1
+		} else {
+			newCount = 1
+		}
+		// add the Left neighbor with the new count
+		neighbors = append(neighbors, astar.Node(Point2{p.x - 1, p.y, newDirection, newCount}))
+	}
+
+	// We can go right if:
+	// 0. we are just starting
+	// 1. we are not on the right edge
+	// 2. we haven't gone left last
+	// 3. we have gone straight 4 times in a row
+	// 4. we haven't gone right 10 times in a row
+	if (p.lastDirection == None) || (p.x < maxWidth-1 &&
+		p.lastDirection != Left &&
+		((p.lastDirection == Right && p.count < 10) ||
+			(p.lastDirection != Right && p.count >= 4))) {
+		newDirection = Right
+		if p.lastDirection == Right {
+			newCount = p.count + 1
+		} else {
+			newCount = 1
+		}
+		// check if we're adding the end node
+		// we must have gone straight at least 4 times
+		if p.x == maxWidth-2 && p.y == maxHeight-1 && p.count >= 4 {
+			// if this is the end node, then we don't need to keep track of the direction or count
+			neighbors = append(neighbors, astar.Node(Point2{p.x + 1, p.y, Any, 0}))
+		} else {
+			neighbors = append(neighbors, astar.Node(Point2{p.x + 1, p.y, newDirection, newCount}))
+		}
+	}
+
+	// We can go up if:
+	// 1. we are not on the top edge
+	// 2. we haven't gone down last
+	// 3. we have gone straight 4 times in a row
+	// 4. we haven't gone up 10 times in a row
+	if p.y > 0 &&
+		p.lastDirection != Down &&
+		((p.lastDirection == Up && p.count < 10) ||
+			(p.lastDirection != Up && p.count >= 4)) {
+		newDirection = Up
+		if p.lastDirection == Up {
+			newCount = p.count + 1
+		} else {
+			newCount = 1
+		}
+		neighbors = append(neighbors, astar.Node(Point2{p.x, p.y - 1, newDirection, newCount}))
+	}
+
+	// We can go down if:
+	// 0. we are just starting
+	// 1. we are not on the bottom edge
+	// 2. we haven't gone up last
+	// 3. we have gone straight 4 times in a row
+	// 4. we haven't gone down 10 times in a row
+	if (p.lastDirection == None) || (p.y < maxHeight-1 && p.lastDirection != Up &&
+		((p.lastDirection == Down && p.count < 10) ||
+			(p.lastDirection != Down && p.count >= 4))) {
+		newDirection = Down
+		if p.lastDirection == Down {
+			newCount = p.count + 1
+		} else {
+			newCount = 1
+		}
+		// check if we are at the end
+		// we must have gone straight at least 4 times
+		if p.x == maxWidth-1 && p.y == maxHeight-2 && p.count >= 4 {
+			neighbors = append(neighbors, astar.Node(Point2{p.x, p.y + 1, Any, 0}))
+		} else {
+			neighbors = append(neighbors, astar.Node(Point2{p.x, p.y + 1, newDirection, newCount}))
+		}
+	}
+
+	return neighbors
+}
+
+func (p Point2) Cost(name string) int {
+	return Point(p).Cost(name)
+}
+
+func (p Point2) Heuristic(target string) int {
+	return Point(p).Heuristic(target)
+}
+
 func run2(input string) string {
-	return ""
+	city := strings.Split(input, "\n")
+	getCityMap(city)
+	startBlock := Point2{0, 0, None, 0}
+	endBlock := Point2{maxWidth - 1, maxHeight - 1, Any, 0}
+	path := astar.Astar(startBlock, endBlock)
+	totalCost := 0
+	cursor.Clear()
+	for i := 1; i < len(path); i++ {
+		point := path[i].(Point2)
+		totalCost += cityMap[point.y][point.x]
+	}
+
+	fmt.Printf("A* Total cost: %d\n", totalCost)
+
+	return fmt.Sprintf("%d", totalCost)
 }

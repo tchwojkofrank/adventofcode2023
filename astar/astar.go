@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 	"sort"
+	"time"
 
 	"chwojkofrank.com/cursor"
 )
@@ -57,14 +58,26 @@ func Astar(start Node, end Node) []Node {
 	guessScore := make(map[string]int)
 	guessScore[(start).Name()] = (start).Heuristic((start).Name())
 
+	clock := 0
+	now := time.Now()
 	// while we have nodes to expand
 	for len(seenNodes) > 0 {
 
+		nextTime := time.Now()
 		// Keep seenNodes sorted by lowest score, pick the first one
 		current := seenNodes[0]
-		cursor.Clear()
 		cursor.Position(0, 0)
-		fmt.Printf("Seen Nodes: %4d\n", len(seenNodes))
+		if clock == 0 {
+			cursor.Clear()
+			fmt.Printf("Seen Nodes: %10d\n", len(seenNodes))
+			fmt.Printf("Guess size: %10d\n", len(guessScore))
+			fmt.Printf("Time: %v\n", nextTime.Sub(now))
+			now = nextTime
+		}
+		clock++
+		if clock == 1000 {
+			clock = 0
+		}
 
 		// if we found the path, stop
 		if (current).Name() == (end).Name() {
@@ -83,13 +96,14 @@ func Astar(start Node, end Node) []Node {
 			// If we found a better guess
 			cScore, ok := cheapestScore[n.Name()]
 			if !ok || guess < cScore {
-				prev[n.Name()] = current
-				cheapestScore[n.Name()] = guess
-				guessScore[n.Name()] = guess + (start).Heuristic(end.Name())
+				nName := n.Name()
+				prev[nName] = current
+				cheapestScore[nName] = guess
+				guessScore[nName] = guess + (start).Heuristic(end.Name())
 
 				found := false
 				for i := 0; i < len(seenNodes) && !found; i++ {
-					if (seenNodes[i]).Name() == (n).Name() {
+					if (seenNodes[i]).Name() == nName {
 						found = true
 					}
 				}

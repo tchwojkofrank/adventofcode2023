@@ -1,6 +1,9 @@
 package interval
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
 type Interval struct {
 	Start int
@@ -12,7 +15,7 @@ func (a Interval) Intersection(b Interval) (Interval, error) {
 	var err error
 	if a.End < b.Start || b.End < a.Start {
 		result = a
-		err = errors.New("No intersection")
+		err = errors.New("no intersection")
 		return result, err
 	}
 	return Interval{max(a.Start, b.Start), min(a.End, b.End)}, nil
@@ -20,7 +23,7 @@ func (a Interval) Intersection(b Interval) (Interval, error) {
 
 func (a Interval) Union(b Interval) (Interval, error) {
 	if a.End < b.Start || b.End < a.Start {
-		return Interval{}, errors.New("No union")
+		return Interval{}, errors.New("no union")
 	}
 
 	return Interval{min(a.Start, b.Start), max(a.End, b.End)}, nil
@@ -39,9 +42,12 @@ func (a Interval) Intersects(b Interval) bool {
 }
 
 func (a Interval) String() string {
-	return "[" + string(a.Start) + "," + string(a.End) + "]"
+	return "[" + fmt.Sprintf("%d", a.Start) + "," + fmt.Sprintf("%d", a.End) + "]"
 }
 
 func (a Interval) Less(b Interval) bool {
+	if a.Start == b.Start {
+		return a.End < b.End
+	}
 	return a.Start < b.Start
 }

@@ -9,7 +9,6 @@ import (
 	"time"
 
 	"chwojkofrank.com/astar"
-	"chwojkofrank.com/cursor"
 	"chwojkofrank.com/dijkstra"
 )
 
@@ -274,7 +273,7 @@ func run(input string) string {
 	for i := 1; i < len(path); i++ {
 		point := path[i].(Point)
 		totalCost += cityMap[point.y][point.x]
-		fmt.Printf("%v\t%6d\n", point, totalCost)
+		// fmt.Printf("%v\t%6d\n", point, totalCost)
 	}
 
 	fmt.Printf("A* Total cost: %d\n", totalCost)
@@ -404,7 +403,7 @@ func run2(input string) string {
 	endBlock := Point2{maxWidth - 1, maxHeight - 1, Any, 0}
 	path := astar.Astar(startBlock, endBlock)
 	totalCost := 0
-	cursor.Clear()
+	// cursor.Clear()
 	for i := 1; i < len(path); i++ {
 		point := path[i].(Point2)
 		totalCost += cityMap[point.y][point.x]

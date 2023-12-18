@@ -1,12 +1,8 @@
 package astar
 
 import (
-	"fmt"
 	"math"
 	"sort"
-	"time"
-
-	"chwojkofrank.com/cursor"
 )
 
 // We can run the A* algorithm on a graph of nodes, if:
@@ -58,26 +54,26 @@ func Astar(start Node, end Node) []Node {
 	guessScore := make(map[string]int)
 	guessScore[(start).Name()] = (start).Heuristic((start).Name())
 
-	clock := 0
-	now := time.Now()
+	// clock := 0
+	// now := time.Now()
 	// while we have nodes to expand
 	for len(seenNodes) > 0 {
 
-		nextTime := time.Now()
+		// nextTime := time.Now()
 		// Keep seenNodes sorted by lowest score, pick the first one
 		current := seenNodes[0]
-		cursor.Position(0, 0)
-		if clock == 0 {
-			cursor.Clear()
-			fmt.Printf("Seen Nodes: %10d\n", len(seenNodes))
-			fmt.Printf("Guess size: %10d\n", len(guessScore))
-			fmt.Printf("Time: %v\n", nextTime.Sub(now))
-			now = nextTime
-		}
-		clock++
-		if clock == 1000 {
-			clock = 0
-		}
+		// cursor.Position(0, 0)
+		// if clock == 0 {
+		// 	cursor.Clear()
+		// 	fmt.Printf("Seen Nodes: %10d\n", len(seenNodes))
+		// 	fmt.Printf("Guess size: %10d\n", len(guessScore))
+		// 	fmt.Printf("Time: %v\n", nextTime.Sub(now))
+		// 	now = nextTime
+		// }
+		// clock++
+		// if clock == 1000 {
+		// 	clock = 0
+		// }
 
 		// if we found the path, stop
 		if (current).Name() == (end).Name() {

@@ -61,6 +61,8 @@ type Conjunction struct {
 	t            string
 	state        map[string]int
 	destinations []string
+	timeToLow    map[string]int
+	timeToHigh   map[string]int
 }
 
 type Pulse struct {
@@ -111,8 +113,47 @@ func (ff *FlipFlop) Type() string {
 	return ff.t
 }
 
+var cycleCounts = make(map[string]int)
+
+func cycleCount(cycles map[string]int) int {
+	if len(cycles) < 4 {
+		return 0
+	}
+	count := 1
+	for _, v := range cycles {
+		count *= v + 1
+	}
+	return count
+}
+
 func (conj *Conjunction) Execute(pulse int, source string) []Pulse {
+	change := false
+	if conj.state[source] != pulse {
+		change = true
+	}
+
+	if change {
+		var delta int
+		if pulse == Low {
+			delta = buttonCount - conj.timeToHigh[source]
+			conj.timeToLow[source] = buttonCount
+		} else {
+			delta = buttonCount - conj.timeToLow[source]
+			conj.timeToHigh[source] = buttonCount
+		}
+		if conj.name == "ls" && pulse == High && cycleCounts[source] != delta {
+			cycleCounts[source] = delta
+			fmt.Printf("%v: %v[%v] -> %v button count: %d of %d\n", conj.name, conj.state, source, pulse, delta, buttonCount)
+			if cycleCount(cycleCounts) > 0 {
+				fmt.Printf("Cycle count: %d\n", cycleCount(cycleCounts))
+				result := fmt.Sprintf("Cycle count: %d\n", cycleCount(cycleCounts))
+				panic(result)
+			}
+		}
+	}
+
 	conj.state[source] = pulse
+
 	newPulses := make([]Pulse, 0)
 	for _, v := range conj.state {
 		if v == Low {
@@ -177,6 +218,8 @@ func getModule(moduleString string) Module {
 		c.name = parts[0][1:]
 		c.t = "&"
 		c.state = make(map[string]int)
+		c.timeToLow = make(map[string]int)
+		c.timeToHigh = make(map[string]int)
 		return &c
 	case 'b':
 		var b Broadcast
@@ -269,10 +312,16 @@ func (f *Final) Type() string {
 	return "f"
 }
 
-func printLS(m *Machine) {
-	ls := m.modules["ls"].(*Conjunction)
-	fmt.Printf("ls: %v\n", ls.state)
+func printConjunctions(m *Machine) {
+	// for _, module := range m.modules {
+	// 	if module.Type() == "&" {
+	// 		c := module.(*Conjunction)
+	// 		fmt.Printf("%v: %v\n", c.Name(), c.state)
+	// 	}
+	// }
 }
+
+var buttonCount int
 
 func run2(input string) string {
 	moduleList := strings.Split(input, "\n")
@@ -295,17 +344,18 @@ func run2(input string) string {
 		}
 	}
 	done := false
-	count := 0
+	buttonCount = 0
 	for !done {
 		pushButton(&machine, Low)
-		count++
-		if count%100000 == 0 {
-			fmt.Printf("Button pushes: %d\n", count)
-			printLS(&machine)
+		printConjunctions(&machine)
 
-		}
+		// if count%100000 == 0 {
+		// fmt.Printf("Button pushes: %d\n", count)
+
+		// }
+		buttonCount++
 		done = machine.modules[f.Name()].(*Final).done
 	}
-	fmt.Printf("Final Button pushes: %d\n", count)
-	return fmt.Sprintf("%d", count)
+	fmt.Printf("Final Button pushes: %d\n", buttonCount)
+	return fmt.Sprintf("%d", buttonCount)
 }
